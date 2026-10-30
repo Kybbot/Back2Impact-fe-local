@@ -7,7 +7,7 @@
  *
  * The API stores the English name rather than the code: the field was free
  * text before the picker, and what is already stored is mostly spelled this
- * way. `languageKey` in `src/i18n/options.ts` matches the rest.
+ * way. `languageKey` in `app/i18n/options.ts` matches the rest.
  */
 export const languageCodes: Record<string, string> = {
     Afrikaans: "af",

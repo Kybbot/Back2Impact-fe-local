@@ -1,7 +1,7 @@
 /**
  * Single source of truth for which languages exist and how they map onto URLs.
  *
- * Imported by `src/routes.ts`, which runs inside the React Router config
+ * Imported by `app/routes.ts`, which runs inside the React Router config
  * loader rather than the app bundle — keep this module free of any browser or
  * React import so both worlds can read it.
  */

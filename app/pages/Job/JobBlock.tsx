@@ -262,7 +262,7 @@ function JobBlock({ className, initialJob }: Props) {
             </Link>
             <div className="job-block__wrapper">
                 <div className="job-block__main">
-                    {/* matches the BreadcrumbList JSON-LD in src/routes/job.tsx and gives
+                    {/* matches the BreadcrumbList JSON-LD in app/routes/job.tsx and gives
                 the vacancy page a crawlable link back up to the listing */}
                     <nav className="job-block__breadcrumbs" aria-label={t("breadcrumbs.label")}>
                         <Link className="job-block__breadcrumbs-link" to="/">

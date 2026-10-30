@@ -47,7 +47,7 @@ const apiOrigin = (() => {
  * Fallback for routes that export no `meta` of their own — in practice only
  * what the ErrorBoundary below renders. React Router does not merge a parent's
  * descriptors into a child's, so every real page builds its own full set
- * through `seo()` in src/utils/seo.ts.
+ * through `seo()` in app/utils/seo.ts.
  *
  * Deliberately no canonical here: this also covers 404s, and pointing every
  * unknown URL's canonical at the homepage is worse than having none.
@@ -92,7 +92,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 {/*
                  * Before anything is fetched or painted: sends a visitor who
                  * has picked a language before to that language's URL. See
-                 * src/i18n/locale-cookie.ts for why this is a script rather
+                 * app/i18n/locale-cookie.ts for why this is a script rather
                  * than a redirect in a loader.
                  */}
                 <script dangerouslySetInnerHTML={{ __html: LOCALE_BOOTSTRAP }} />
@@ -123,7 +123,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <body>
                 {children}
 
-                {/* radix portals mount here, see src/utils/portal-container.ts */}
+                {/* radix portals mount here, see app/utils/portal-container.ts */}
                 <div id="portal"></div>
 
                 <ScrollRestoration />

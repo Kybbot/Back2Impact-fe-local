@@ -2,7 +2,7 @@
  * Values the onboarding forms send to the API.
  *
  * As with `filter-options.ts`, only the codes live here — labels come from the
- * `options` namespace of the translations, looked up via `src/i18n/options.ts`.
+ * `options` namespace of the translations, looked up via `app/i18n/options.ts`.
  */
 export const onboardingOptions = {
     audienceSegments: [

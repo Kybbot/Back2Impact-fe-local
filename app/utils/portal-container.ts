@@ -1,5 +1,5 @@
 /**
- * The #portal node lives in the <body> of src/root.tsx.
+ * The #portal node lives in the <body> of app/root.tsx.
  * Resolved lazily so it is never touched during a server render.
  */
 export const getPortalContainer = () =>

@@ -5,7 +5,7 @@
  * the browser on every client-side navigation — so the origin has to resolve
  * identically in both places, otherwise hydration reports a mismatch on the
  * canonical link. `SITE_URL` is therefore read the same way `API_URL` is in
- * `src/api/server.server.ts`: a runtime `process.env` value (server only, so a
+ * `app/api/server.server.ts`: a runtime `process.env` value (server only, so a
  * container can be pointed at a different domain without a rebuild) falling
  * back to the build-time `VITE_SITE_URL` that the browser bundle carries.
  *

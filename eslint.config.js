@@ -21,7 +21,7 @@ export default defineConfig([
   },
   {
     // route modules export loaders/meta/HydrateFallback alongside the component
-    files: ['src/root.tsx', 'src/routes/**/*.tsx'],
+    files: ['app/root.tsx', 'app/routes/**/*.tsx'],
     rules: {
       'react-refresh/only-export-components': 'off',
     },

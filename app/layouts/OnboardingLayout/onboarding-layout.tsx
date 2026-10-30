@@ -54,7 +54,7 @@ function OnboardingLayout() {
      * Locale-free, because `steps[].path` is: the step list is the same in
      * every language, so `/en/onboarding/cv` has to be matched as
      * `/onboarding/cv`. `useNavigate` here is the wrapper from
-     * `src/i18n/navigation`, which puts the prefix back on the way out.
+     * `app/i18n/navigation`, which puts the prefix back on the way out.
      */
     const pathname = stripLocaleFromPathname(useLocation().pathname);
     const navigate = useNavigate();

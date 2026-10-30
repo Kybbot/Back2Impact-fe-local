@@ -7,33 +7,33 @@ React Router 7 (framework mode) + React 19 + Vite 8.
 | Route           | Mode | How it is wired                                                            |
 | --------------- | ---- | -------------------------------------------------------------------------- |
 | `/`             | SSG  | `prerender: ['/']` in `react-router.config.ts` → `build/client/index.html` |
-| `/jobs/all`     | SSR  | server `loader` in `src/routes/jobs.all.tsx`                               |
-| `/jobs/j/:id`   | SSR  | server `loader` + JSON-LD in `src/routes/job.tsx`                          |
+| `/jobs/all`     | SSR  | server `loader` in `app/routes/jobs.all.tsx`                               |
+| `/jobs/j/:id`   | SSR  | server `loader` + JSON-LD in `app/routes/job.tsx`                          |
 | everything else | SPA  | `clientLoader` + `HydrateFallback`, no server `loader`                     |
 
 A route that exports a `clientLoader` and a `HydrateFallback` but **no** server
 `loader` is skipped during the server render — that is the per-route SPA
-escape hatch used across `src/routes/`.
+escape hatch used across `app/routes/`.
 
 The two SSR loaders fetch **anonymously**: the HTML is identical for every
 visitor and therefore cacheable. Personal fields (`score`, `isSaved`,
 `isApplied`, `applyStatus`) are filled in on the client once the visitor turns
-out to be signed in — see `SessionEffects` in `src/root.tsx`,
-`src/hooks/use-default-jobs-infinite.ts` and `src/hooks/use-job.ts`.
+out to be signed in — see `SessionEffects` in `app/root.tsx`,
+`app/hooks/use-default-jobs-infinite.ts` and `app/hooks/use-job.ts`.
 
 ## Auth
 
 There is no auth context. The signed-in user **is** the `me` query
-(`src/hooks/useCurrentUser.ts`): `UserData` when there is a session, `null`
+(`app/hooks/useCurrentUser.ts`): `UserData` when there is a session, `null`
 when there is none, `undefined` while it has not been asked yet. Everything
 else derives from it.
 
 | Concern                       | Where                                                                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| token refresh                 | `src/api/instance.ts` — one place, one in-flight refresh; a 401 replays the request after it, a failed refresh sets `me` to `null`. Auth endpoints opt out with `skipAuthRefresh` |
-| login / sign-up / logout      | mutations in `src/hooks/use-auth-mutations.ts`; `onSuccess` loads or clears the `me` query before `mutateAsync` resolves, so a navigation right after finds the cache ready    |
-| signed-in-only routes         | `requireUser` (`src/utils/require-user.ts`) in the route's `clientLoader`, answering from the cache; `useRequireUser` in the component catches the session ending while the page is open |
-| query cache outside React     | `getQueryClient()` in `src/api/query-client.ts` — a singleton in the browser, a fresh client per request on the server                                                           |
+| token refresh                 | `app/api/instance.ts` — one place, one in-flight refresh; a 401 replays the request after it, a failed refresh sets `me` to `null`. Auth endpoints opt out with `skipAuthRefresh` |
+| login / sign-up / logout      | mutations in `app/hooks/use-auth-mutations.ts`; `onSuccess` loads or clears the `me` query before `mutateAsync` resolves, so a navigation right after finds the cache ready    |
+| signed-in-only routes         | `requireUser` (`app/utils/require-user.ts`) in the route's `clientLoader`, answering from the cache; `useRequireUser` in the component catches the session ending while the page is open |
+| query cache outside React     | `getQueryClient()` in `app/api/query-client.ts` — a singleton in the browser, a fresh client per request on the server                                                           |
 
 A page's markup never depends on the user during SSR: the header renders its
 account block only once `me` has resolved, and the server-rendered lists are
@@ -87,10 +87,10 @@ Runtime — read by the SSR server:
 
 | Concern                                             | Where                                                                                                                                     |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| titles, descriptions, canonical, OpenGraph, Twitter | `seo()` in `src/utils/seo.ts`, called from each route's `meta`                                                                            |
-| `robots.txt`, `sitemap.xml`                         | resource routes `src/routes/robots.ts` and `src/routes/sitemap.ts`                                                                        |
+| titles, descriptions, canonical, OpenGraph, Twitter | `seo()` in `app/utils/seo.ts`, called from each route's `meta`                                                                            |
+| `robots.txt`, `sitemap.xml`                         | resource routes `app/routes/robots.ts` and `app/routes/sitemap.ts`                                                                        |
 | structured data                                     | `Organization` + `WebSite` in `routes/home.tsx`, `ItemList` in `routes/jobs.all.tsx`, `JobPosting` + `BreadcrumbList` in `routes/job.tsx` |
-| crawlable vacancy links                             | the `<h2>` of each card in `src/components/job/job.tsx`; the card's own click handler stays for visitors                                  |
+| crawlable vacancy links                             | the `<h2>` of each card in `app/components/job/job.tsx`; the card's own click handler stays for visitors                                  |
 | pagination                                          | `/jobs/all?page=N` is server-rendered, with a `rel="next"` anchor after the list. Visually hidden (infinite scroll is what a sighted visitor uses) but kept in the DOM, keyboard-reachable, and unhidden on focus |
 
 React Router takes `meta` from the **deepest** matched route that exports one

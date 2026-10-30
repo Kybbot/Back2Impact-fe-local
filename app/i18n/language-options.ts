@@ -7,7 +7,7 @@ import { capitalize } from "../utils/date";
 import { languageCodes } from "../utils/language-options";
 
 /**
- * Labels and picker options for the languages in `src/utils/language-options.ts`.
+ * Labels and picker options for the languages in `app/utils/language-options.ts`.
  *
  * One formatter per locale, as `regionFormatters` in `options.ts`.
  * `fallback: "none"` so a name the runtime lacks falls back to the stored

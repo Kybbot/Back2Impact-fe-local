@@ -126,7 +126,7 @@ const isExpired = (token: string) => {
  * is not what reaches this process (a proxy that rewrites Host, for instance);
  * without it the incoming request's origin is already correct.
  *
- * Read from `process.env` rather than imported from `src/utils/seo.ts`: that
+ * Read from `process.env` rather than imported from `app/utils/seo.ts`: that
  * module falls back to a hardcoded production URL for the browser bundle, which
  * would have `react-router dev` send a production `Origin` the API rejects.
  * `new URL(...).origin` strips a trailing slash or a sub-path, neither

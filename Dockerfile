@@ -42,7 +42,7 @@ FROM base AS runtime
 ENV NODE_ENV=production
 ENV PORT=3000
 
-# Read by process.env in src/api/server.server.ts. Re-declaring the global ARGs
+# Read by process.env in app/api/server.server.ts. Re-declaring the global ARGs
 # brings their values into this stage, so the runtime pair defaults to whatever
 # the build was given and only has to be passed once.
 #

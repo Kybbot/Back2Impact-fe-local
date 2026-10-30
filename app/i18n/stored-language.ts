@@ -4,7 +4,7 @@
  * settings screen have to cross that line, so the mapping lives here rather
  * than in either of them.
  *
- * Kept out of `config.ts`: that module is read by `src/routes.ts` outside the
+ * Kept out of `config.ts`: that module is read by `app/routes.ts` outside the
  * app bundle and must stay free of application imports.
  */
 

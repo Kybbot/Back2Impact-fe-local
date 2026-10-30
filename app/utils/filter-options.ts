@@ -4,7 +4,7 @@
  * Only the codes live here — the labels are in the `options` namespace of the
  * translations, keyed by these same codes. That split matters: the code is
  * part of the API contract and must never change with the display language,
- * while the label is just text. Look these up through `src/i18n/options.ts`
+ * while the label is just text. Look these up through `app/i18n/options.ts`
  * rather than indexing a dictionary by hand.
  */
 export const filterOptions = {

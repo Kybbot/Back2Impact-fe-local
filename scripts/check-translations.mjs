@@ -1,7 +1,7 @@
 /**
  * Compares the key sets of every locale against the default one.
  *
- * `src/i18n/i18next.d.ts` derives the `t()` key types from the Ukrainian
+ * `app/i18n/i18next.d.ts` derives the `t()` key types from the Ukrainian
  * files, so a typo in a key is already a compile error — but a key that exists
  * in `uk` and is missing from `en` is not: it silently falls back and the
  * English page renders Ukrainian text. That is what this catches.
@@ -15,9 +15,9 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const localesDir = join(here, "..", "src", "i18n", "locales");
+const localesDir = join(here, "..", "app", "i18n", "locales");
 
-// Mirrors src/i18n/config.ts. That file is TypeScript and this script runs on
+// Mirrors app/i18n/config.ts. That file is TypeScript and this script runs on
 // bare Node, so the lists are repeated rather than adding a transpile step for
 // one check — keep them in step when a locale or namespace is added.
 const locales = ["uk", "en"];

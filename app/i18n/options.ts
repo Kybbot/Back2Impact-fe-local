@@ -11,8 +11,8 @@ import { useLocale } from "./use-locale";
 import { useT } from "./use-t";
 
 /**
- * Labels for the API codes in `src/utils/filter-options.ts` and
- * `src/utils/onboarding-options.ts`.
+ * Labels for the API codes in `app/utils/filter-options.ts` and
+ * `app/utils/onboarding-options.ts`.
  *
  * `defaultValue: code` is the deliberate fallback: when the API starts sending
  * a value this build has no translation for, the filter still renders and

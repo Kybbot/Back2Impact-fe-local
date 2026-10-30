@@ -33,7 +33,7 @@ export default async function handleRequest(
 
     /**
      * A fresh i18next per request, for the same reason `QueryClient` is built
-     * per request in `src/root.tsx`: a module-level singleton is shared by
+     * per request in `app/root.tsx`: a module-level singleton is shared by
      * every concurrent render, so one visitor on /en would flip the language
      * out from under another mid-render. `createInstance` is cheap — the
      * translations themselves are a module-level constant and are only
@@ -45,7 +45,7 @@ export default async function handleRequest(
         ...i18nConfig,
         resources,
         // the URL is the only thing that decides the language, exactly as it is
-        // on the client — see src/i18n/locale.ts
+        // on the client — see app/i18n/locale.ts
         lng: getLocaleFromPathname(new URL(request.url).pathname),
     });
 

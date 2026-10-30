@@ -22,7 +22,7 @@ const apiProxy = (env: Record<string, string>): Record<string, ProxyOptions> | u
         throw new Error(`VITE_API_URL=${prefix} is proxied, so API_URL must point at the real API`);
 
     // loaders run in this process and need the absolute address, not the
-    // prefix — `src/api/server.server.ts` reads it from here
+    // prefix — `app/api/server.server.ts` reads it from here
     process.env.API_URL ??= env.API_URL;
 
     return {
@@ -56,7 +56,7 @@ export default defineConfig(({ command, mode }) => {
         ],
         resolve: {
             alias: {
-                "@": fileURLToPath(new URL("./src", import.meta.url)),
+                "@": fileURLToPath(new URL("./app", import.meta.url)),
             },
         },
         server: {
