@@ -1,0 +1,80 @@
+{
+    "generic": {
+        "short": "Something went wrong",
+        "tryAgainSoon": "Something went wrong. Please try again in a moment.",
+        "reload": "Something went wrong. Please, reload the page"
+    },
+    "page": {
+        "generic": {
+            "description": "Please, reload the page"
+        },
+        "notFound": {
+            "heading": "Page not found",
+            "description": "The page you are looking for doesn't exist or has been removed.",
+            "vacancyGone": "This vacancy is no longer available — it may have been filled or taken down."
+        }
+    },
+    "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "password": "Password must be at least 8 characters and include an uppercase letter and a number",
+        "passwordsMatch": "Passwords don't match"
+    },
+    "file": {
+        "tooBig": "File is too big, please try uploading a smaller file",
+        "invalidFormat": "File format is not valid, please try uploading another file",
+        "uploadFailed": "Failed to load the file. Please try again",
+        "uploadFailedShort": "Failed to load file"
+    },
+    "auth": {
+        "companyName": "Please enter your company name",
+        "fullName": "Please enter your full name",
+        "consent": "Please accept the Terms of use and Privacy policy to continue",
+        "wrongCredentials": "Incorrect email or password. Please try again.",
+        "emailNotVerified": "Please verify your email before logging in. Check your inbox or <resend>resend the link</resend>",
+        "userAlreadyExists": "An account with this email already exists. <login>Log in instead?</login>",
+        "googleFailure": "Google sign-in was cancelled or failed. Please try again.",
+        "linkExpired": "Your verification link has expired. Log in to request a new one.",
+        "invalidLink": "This link is not valid. Please sign up again or contact support.",
+        "invalidResetLink": "This reset link has expired or is not valid. Request a new one."
+    },
+    "employers": {
+        "min_one": "At least {{count}} character",
+        "min_other": "At least {{count}} characters",
+        "max_one": "No more than {{count}} character",
+        "max_other": "No more than {{count}} characters",
+        "website": "Enter a valid link, e.g. https://example.com",
+        "sectors": "Pick at least one sector",
+        "founded": "Enter a year between {{min}} and {{max}}",
+        "companyExists": "A company with this name already exists",
+        "logo": {
+            "invalidType": "Only PNG or SVG files are supported.",
+            "tooLarge": "The file is larger than 2 MB.",
+            "uploadFailed": "Couldn't upload the logo. Please try again."
+        },
+        "statusChange": {
+            "link": "Enter a valid link, e.g. https://calendly.com/you"
+        },
+        "vacancy": {
+            "pickOne": "Pick at least one",
+            "salary": "Enter a whole number",
+            "salaryRange": "Can't be less than the lower bound",
+            "seniorityRange": "Can't be below the starting level",
+            "internshipRange": "Can't be before the start date",
+            "deadline_one": "Pick a date within the next {{count}} day",
+            "deadline_other": "Pick a date within the next {{count}} days"
+        }
+    },
+    "jobs": {
+        "apply": {
+            "description": "Your application wasn't sent, please try again.",
+            "letterMin_one": "The letter should contain at least {{count}} character",
+            "letterMin_other": "The letter should contain at least {{count}} characters",
+            "letterMax_one": "The letter should contain no more than {{count}} character",
+            "letterMax_other": "The letter should contain no more than {{count}} characters"
+        }
+    },
+    "profile": {
+        "oldPasswordRequired": "Please enter old password"
+    }
+}

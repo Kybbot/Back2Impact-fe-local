@@ -1,0 +1,82 @@
+{
+    "nav": {
+        "opportunities": "Opportunities",
+        "returnGuide": "Return guide",
+        "stories": "Stories",
+        "projects": "Projects",
+        "forEmployers": "For employers",
+        "login": "Log in",
+        "account": "My account",
+        "profile": "My profile",
+        "logout": "Log out",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu"
+    },
+    "hero": {
+        "title": "Come back to <accent>home</accent>",
+        "titleWords": ["home", "build", "grow", "Ukraine"],
+        "description": "Wherever your career has taken you, it can lead to Ukraine. We find where your experience matters most, across jobs, internships and projects shaping the country's future.",
+        "cta": "Join us",
+        "ctaAuthorized": "Explore opportunities",
+        "appImageAlt": "App image"
+    },
+    "opportunities": {
+        "title": "Opportunities matched to you",
+        "description": "Tell us about your experience, skills, and plans — we'll surface the roles that actually fit. Every match comes with a score, so you always see why an opportunity suits you.",
+        "cards": {
+            "about": {
+                "title": "Tell us about yourself",
+                "description": "Share your experience, skills, and career goals"
+            },
+            "discover": {
+                "title": "Discover opportunities",
+                "description": "We'll find roles tailored to your background"
+            },
+            "apply": {
+                "title": "Apply with confidence",
+                "description": "See a match score for every opportunity before you apply"
+            }
+        }
+    },
+    "goal": {
+        "title": "One goal, many ways in",
+        "description": "Whether you're ready for a full move or want to start small, there's a format that fits your situation.",
+        "cards": {
+            "fullTime": "Full-time, Permanent roles with Ukrainian companies and international teams working in Ukraine",
+            "internships": "Internships, Short-term placements to gain local experience, test the waters, and grow your network",
+            "projects": "Projects, Flexible, remote-friendly engagements — start contributing from anywhere, today"
+        }
+    },
+    "hiring": {
+        "imageAlt": "Hiring team",
+        "tag": "Hiring?",
+        "title": "Reach talent that's ready to return",
+        "description": "Post your openings on Back2Impact and connect with experienced Ukrainians abroad who are looking for their way back home.",
+        "cta": "Post a job"
+    },
+    "footer": {
+        "tagline": "Careers that bring you home.",
+        "comingSoon": "coming soon",
+        "platform": {
+            "title": "Platform",
+            "opportunities": "Opportunities",
+            "returnGuide": "Return Guide",
+            "stories": "Stories",
+            "projects": "Projects"
+        },
+        "employers": {
+            "title": "For employers",
+            "postJob": "Post a job",
+            "howItWorks": "How it works"
+        },
+        "about": {
+            "title": "About",
+            "aboutUs": "About us",
+            "partners": "Partners",
+            "contact": "Contact us",
+            "privacy": "Privacy policy",
+            "terms": "Terms of use"
+        },
+        "rights": "2026 Back2Impact. All rights reserved."
+    }
+}

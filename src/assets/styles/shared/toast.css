@@ -1,0 +1,53 @@
+/*
+ * react-toastify injects its own <style> into <head> at runtime, after this
+ * file, so every rule here carries the extra `.toast` class to win on
+ * specificity rather than on order.
+ */
+.Toastify__toast {
+    --toastify-toast-width: 280px;
+}
+
+.Toastify__toast.toast {
+    gap: 8px;
+    min-height: 48px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+}
+
+.toast.Toastify__toast--success {
+    border-color: #5cdb8480;
+    background-color: #e1f6e7;
+}
+
+.toast.Toastify__toast--error {
+    border-color: #ffe8e5;
+    background-color: #ffefee;
+}
+
+.toast .Toastify__toast-icon {
+    width: 24px;
+    height: 24px;
+    margin-inline-end: 0;
+}
+
+.toast .Toastify__close-button {
+    position: static;
+    align-self: center;
+    margin-left: auto;
+}
+
+/* the library's own breakpoint: below it toasts go edge to edge, square */
+@media screen and (max-width: 480px) {
+    .Toastify__toast.toast {
+        width: calc(100% - 32px);
+        margin: 16px 16px 0;
+    }
+}

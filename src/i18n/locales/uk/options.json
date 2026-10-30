@@ -1,0 +1,194 @@
+{
+    "filters": {
+        "professionalAreas": {
+            "business_analysis": "Бізнес / Дані",
+            "customer_&_tech_support": "Підтримка клієнтів / Технічна підтримка",
+            "data_analytics": "Аналітика даних",
+            "design": "Дизайн",
+            "engineering_&_manufacturing": "Інженерія / Виробництво",
+            "executive_&_leadership_roles": "Керівні посади",
+            "finance_&_accounting": "Фінанси / Бухгалтерія",
+            "hr_&_recruiting": "HR / Рекрутинг",
+            "software_development": "IT / Розробка",
+            "legal_&_compliance": "Право / Комплаєнс",
+            "logistics_&_supply_chain": "Логістика / Ланцюги постачання",
+            "management": "Менеджмент",
+            "marketing": "Маркетинг",
+            "media": "Медіа",
+            "product_management": "Продуктовий менеджмент",
+            "project_management": "Проєктний менеджмент",
+            "sales_&_business_development": "Продажі / Розвиток бізнесу",
+            "teaching_&_education": "Викладання / Освіта"
+        },
+        "spheres": {
+            "account": "Облік",
+            "administration": "Адміністрування",
+            "advocacy": "Адвокація",
+            "analytics": "Аналітика",
+            "comms": "Комунікації",
+            "community": "Спільнота",
+            "consulting": "Консалтинг",
+            "copywriting": "Копірайтинг",
+            "design": "Дизайн",
+            "education": "Освіта",
+            "engineering": "Інженерія",
+            "event": "Івенти",
+            "finance": "Фінанси",
+            "fundraising": "Фандрейзинг",
+            "gr": "GR",
+            "healthcare": "Охорона здоровʼя",
+            "hr": "HR",
+            "it": "IT",
+            "journalism": "Журналістика",
+            "law": "Право",
+            "marketing": "Маркетинг",
+            "monitoring": "Моніторинг",
+            "partnership": "Партнерства",
+            "pr": "PR",
+            "procurement": "Закупівлі",
+            "projectmanagement": "Проєктний менеджмент",
+            "psychology": "Психологія",
+            "recruitment": "Рекрутинг",
+            "research": "Дослідження",
+            "sales": "Продажі",
+            "support": "Підтримка",
+            "topmanagement": "Топменеджмент",
+            "translation": "Переклад",
+            "video": "Відео"
+        },
+        "workFormats": {
+            "hybrid": "Гібридний",
+            "in_office": "В офісі",
+            "remote": "Віддалено"
+        },
+        "employmentTypes": {
+            "full_time": "Повна зайнятість",
+            "part_time": "Часткова зайнятість",
+            "internship": "Стажування",
+            "short_term_project": "Короткостроковий проєкт або стипендійна програма",
+            "volunteering": "Волонтерство для України"
+        },
+        "seniorityLevels": {
+            "entry": "Початковий",
+            "junior": "Junior",
+            "middle": "Middle",
+            "senior": "Senior",
+            "top_management": "Топменеджмент"
+        }
+    },
+    "seniorityLevels": {
+        "entry": "Початковий",
+        "junior": "Junior",
+        "middle": "Middle",
+        "senior": "Senior",
+        "top_management": "Топменеджмент"
+    },
+    "opportunityTypes": {
+        "full_time": "Повна зайнятість",
+        "part_time": "Часткова зайнятість",
+        "internship": "Стажування",
+        "short_term_project": "Короткостроковий проєкт або стипендійна програма",
+        "volunteering": "Волонтерство для України"
+    },
+    "onboarding": {
+        "audienceSegments": {
+            "im_a_ugs_student": "Я студент або випускник UGS",
+            "i_left_ukraine_after_february_24_2022": "Я виїхав(ла) з України після 24 лютого 2022 року",
+            "i_left_ukraine_before_the_full_scale_invasion": "Я виїхав(ла) з України до повномасштабного вторгнення",
+            "im_ukrainian_diaspora_born_abroad": "Я з української діаспори — народився(лася) за кордоном",
+            "i_live_in_ukraine": "Я живу в Україні",
+            "im_an_international_professional": "Я іноземний фахівець, якого цікавить робота в Україні"
+        },
+        "opportunityTypes": {
+            "full_time": "Повна зайнятість",
+            "part_time": "Часткова зайнятість",
+            "internship": "Стажування",
+            "short_term_project": "Короткостроковий проєкт або стипендійна програма",
+            "volunteering": "Волонтерство для України"
+        },
+        "sectors": {
+            "agriculture_&_agritech": "Сільське господарство та AgriTech",
+            "education": "Освіта",
+            "energy_&_infrastructure": "Енергетика та інфраструктура",
+            "finance_&_fintech": "Фінанси та FinTech",
+            "government_&_public_sector": "Держава та публічний сектор",
+            "healthcare_&_medtech": "Охорона здоровʼя та MedTech",
+            "international_organizations": "Міжнародні організації",
+            "media_&_communications": "Медіа та комунікації",
+            "miltech_&_defense": "MilTech та оборона",
+            "ngo_&_civil_society": "ГО та громадянське суспільство",
+            "technology_&_it": "Технології та IT",
+            "urban_development": "Міський розвиток"
+        },
+        "professionalAreas": {
+            "business_analysis": "Бізнес-аналіз",
+            "customer_&_tech_support": "Підтримка клієнтів і технічна підтримка",
+            "data_analytics": "Аналітика даних",
+            "design": "Дизайн",
+            "engineering_&_manufacturing": "Інженерія та виробництво",
+            "executive_&_leadership_roles": "Керівні посади",
+            "finance_&_accounting": "Фінанси та бухгалтерія",
+            "hr_&_recruiting": "HR та рекрутинг",
+            "legal_&_compliance": "Право та комплаєнс",
+            "logistics_&_supply_chain": "Логістика та ланцюги постачання",
+            "management": "Менеджмент",
+            "marketing": "Маркетинг",
+            "media": "Медіа",
+            "product_management": "Продуктовий менеджмент",
+            "project_management": "Проєктний менеджмент",
+            "sales_&_business_development": "Продажі та розвиток бізнесу",
+            "software_development": "Розробка ПЗ",
+            "teaching_&_education": "Викладання та освіта"
+        },
+        "workLocationPreferences": {
+            "remote": "Віддалено, звідки я зараз",
+            "no_preference": "Без переваг - покажіть усе",
+            "ukraine": "В Україні - я тут або планую переїзд"
+        },
+        "regions": {
+            "cherkasy": "Черкаська область",
+            "chernihiv": "Чернігівська область",
+            "chernivtsi": "Чернівецька область",
+            "crimea": "Крим",
+            "dnipropetrovsk": "Дніпропетровська область",
+            "donetsk": "Донецька область",
+            "ivano_frankivsk": "Івано-Франківська область",
+            "kharkiv": "Харківська область",
+            "kherson": "Херсонська область",
+            "khmelnytskyi": "Хмельницька область",
+            "kirovohrad": "Кіровоградська область",
+            "kyiv": "Київ",
+            "kyiv_oblast": "Київська область",
+            "luhansk": "Луганська область",
+            "lviv": "Львівська область",
+            "mykolaiv": "Миколаївська область",
+            "odesa": "Одеська область",
+            "poltava": "Полтавська область",
+            "rivne": "Рівненська область",
+            "sumy": "Сумська область",
+            "ternopil": "Тернопільська область",
+            "vinnytsia": "Вінницька область",
+            "volyn": "Волинська область",
+            "zakarpattia": "Закарпатська область",
+            "zaporizhzhia": "Запорізька область",
+            "zhytomyr": "Житомирська область"
+        }
+    },
+    "experience": {
+        "degrees": {
+            "bachelors": "Бакалавр",
+            "masters": "Магістр",
+            "phd": "Доктор філософії (PhD)",
+            "other": "Інше"
+        },
+        "languageLevels": {
+            "a1": "A1 (Початковий)",
+            "a2": "A2 (Елементарний)",
+            "b1": "B1 (Середній)",
+            "b2": "B2 (Вище середнього)",
+            "c1": "C1 (Просунутий)",
+            "c2": "C2 (Вільне володіння)",
+            "native": "Рідна"
+        }
+    }
+}

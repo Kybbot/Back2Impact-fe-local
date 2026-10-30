@@ -1,0 +1,14 @@
+.user-jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.user-jobs-list__loader-block {
+    width: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}

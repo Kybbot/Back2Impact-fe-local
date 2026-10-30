@@ -1,0 +1,96 @@
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 365px;
+    /* height: 174px; */
+    border-radius: 12px;
+    padding: 31px;
+    text-align: "center";
+    cursor: "pointer";
+    transition: "0.2s";
+    background-color: #f1efe9b2;
+}
+
+.file-upload__dropped {
+    border-color: #539e69;
+    background-color: #bff5d033;
+}
+
+.file-upload__dropped .file-upload__dragndrop-str,
+.file-upload__dropped .file-upload__or-str,
+.file-upload__dropped .file-upload__btn,
+.file-upload__dropped .file-upload__formats-str {
+    display: none;
+}
+
+.file-upload__dropped .file-upload__delete-btn {
+    display: block;
+}
+
+.file-upload__dragndrop-str {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+}
+
+.file-upload__or-str {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #33333399;
+}
+
+.file-upload__btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    max-width: 100%;
+}
+
+.file-upload__btn {
+    width: 98px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #3d3f41;
+}
+
+.file-upload__formats-str,
+.file-upload__file-name {
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-upload__delete-btn {
+    display: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    color: #ce5347;
+}

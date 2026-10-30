@@ -1,0 +1,46 @@
+{
+    "breadcrumbs": {
+        "label": "Breadcrumb",
+        "allVacancies": "All vacancies"
+    },
+    "backToListings": "Back to listings",
+    "match": "match",
+    "saved": "Saved",
+    "unsaved": "Removed from saved",
+    "undo": "Undo",
+    "apply": "Apply",
+    "applied": "Applied",
+    "appliedWithStatus": "Applied ({{status}})",
+    "applicationSent": "Application sent!",
+    "applyStatus": {
+        "new": "new",
+        "in_review": "in review",
+        "invited": "invited",
+        "hired": "hired",
+        "not_a_fit": "not a fit"
+    },
+    "seniorityRange": "{{from}} – {{to}}",
+    "salary": "{{min}}",
+    "salary_range": "{{min}} - {{max}}",
+    "salary_max": "up to {{max}}",
+    "currency": {
+        "usdPerMonth": "USD/month",
+        "eurPerMonth": "EUR/month",
+        "uahPerMonth": "UAH/month",
+        "usdPerProject": "USD per project",
+        "unpaid": "Unpaid"
+    },
+    "languages": {
+        "english": "English: {{level}}",
+        "ukrainian": "Ukrainian: {{level}}"
+    },
+    "internship": "Internship",
+    "internshipDates": "{{start}} – {{end}}",
+    "internshipDates_from": "from {{start}}",
+    "internshipDates_until": "until {{end}}",
+    "companyLogoAlt": "{{company}} logo",
+    "openCompanyWebsite": "Open company website",
+    "employees_one": "{{size}} employee",
+    "employees_other": "{{size}} employees",
+    "published": "Published: {{date}}"
+}

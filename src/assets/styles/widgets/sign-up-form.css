@@ -1,0 +1,149 @@
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sign-up-form__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sign-up-form__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sign-up-form__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #33333399;
+}
+
+.sign-up-form__input-container {
+    height: 48px;
+    position: relative;
+}
+
+.sign-up-form__input-container:has(input:focus) {
+    border-color: #333333;
+}
+
+.sign-up-form__input-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.sign-up-form__input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    padding: 15.5px 16px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+    outline: none;
+    background-color: #FAFAFA;
+}
+
+.sign-up-form__input::placeholder {
+    color: #33333399;
+}
+
+.sign-up-form__input:focus::placeholder {
+    color: rgba(0, 0, 0, 0);
+}
+
+.sign-up-form__btn {
+    display: block;
+    height: 48px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #ADADAD;
+    background-color: #3333331A;
+}
+
+.sign-up-form__btn_active {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.sign-up-form__btn_active:hover {
+    background-color: #181818;
+}
+
+.sign-up-form__btn_loader {
+    background: linear-gradient(
+        90deg,
+        #333333 35%,
+        #4A4A4A 50%,
+        #333333 65%
+    );
+    background-size: 200% 100%;
+    animation: btn-loading 3s infinite linear;
+}
+
+@keyframes btn-loading {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}
+
+.sign-up-form__invalid-message {
+    font-size: 13px;
+    color: rgb(255, 100, 100);
+}
+
+.sign-up-form__login-link {
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+}
+
+.sign-up-form__input-icon-btn {
+    display: block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sign-up-form__consent {
+    align-items: flex-start;
+}
+
+.sign-up-form__consent .customCheckbox__label {
+    line-height: 120%;
+}
+
+.sign-up-form__consent.customCheckbox--error .customCheckbox__square {
+    border-color: #AF271D;
+}
+
+.sign-up-form__consent-link {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.sign-up-form__invalid-input-msg {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #AF271D;
+}

@@ -1,0 +1,11 @@
+node_modules
+build
+dist
+.react-router
+.git
+.env
+.env.local
+*.log
+.DS_Store
+.vscode
+.idea

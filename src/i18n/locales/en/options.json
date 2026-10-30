@@ -1,0 +1,194 @@
+{
+    "filters": {
+        "professionalAreas": {
+            "business_analysis": "Business / Data",
+            "customer_&_tech_support": "Customer / Tech support",
+            "data_analytics": "Data analytics",
+            "design": "Design",
+            "engineering_&_manufacturing": "Engineering / Manufacturing",
+            "executive_&_leadership_roles": "Executive / Leadership roles",
+            "finance_&_accounting": "Finance / Accounting",
+            "hr_&_recruiting": "HR / Recruitment",
+            "software_development": "IT / Engineering",
+            "legal_&_compliance": "Legal / Compliance",
+            "logistics_&_supply_chain": "Logistics / Supply chain",
+            "management": "Management",
+            "marketing": "Marketing",
+            "media": "Media",
+            "product_management": "Product management",
+            "project_management": "Project management",
+            "sales_&_business_development": "Sales / Business development",
+            "teaching_&_education": "Teaching / Education"
+        },
+        "spheres": {
+            "account": "Account",
+            "administration": "Administration",
+            "advocacy": "Advocacy",
+            "analytics": "Analytics",
+            "comms": "Comms",
+            "community": "Community",
+            "consulting": "Consulting",
+            "copywriting": "Copywriting",
+            "design": "Design",
+            "education": "Education",
+            "engineering": "Engineering",
+            "event": "Event",
+            "finance": "Finance",
+            "fundraising": "Fundraising",
+            "gr": "GR",
+            "healthcare": "Healthcare",
+            "hr": "HR",
+            "it": "IT",
+            "journalism": "Journalism",
+            "law": "Law",
+            "marketing": "Marketing",
+            "monitoring": "Monitoring",
+            "partnership": "Partnership",
+            "pr": "PR",
+            "procurement": "Procurement",
+            "projectmanagement": "Project management",
+            "psychology": "Psychology",
+            "recruitment": "Recruitment",
+            "research": "Research",
+            "sales": "Sales",
+            "support": "Support",
+            "topmanagement": "Top management",
+            "translation": "Translation",
+            "video": "Video"
+        },
+        "workFormats": {
+            "hybrid": "Hybrid",
+            "in_office": "On-site",
+            "remote": "Remote"
+        },
+        "employmentTypes": {
+            "full_time": "Full-time job",
+            "part_time": "Part-time job",
+            "internship": "Internship",
+            "short_term_project": "Short-term project or fellowship",
+            "volunteering": "Volunteering for Ukraine"
+        },
+        "seniorityLevels": {
+            "entry": "Entry",
+            "junior": "Junior",
+            "middle": "Middle",
+            "senior": "Senior",
+            "top_management": "Top management"
+        }
+    },
+    "seniorityLevels": {
+        "entry": "Entry",
+        "junior": "Junior",
+        "middle": "Middle",
+        "senior": "Senior",
+        "top_management": "Top management"
+    },
+    "opportunityTypes": {
+        "full_time": "Full-time job",
+        "part_time": "Part-time job",
+        "internship": "Internship",
+        "short_term_project": "Short-term project or fellowship",
+        "volunteering": "Volunteering for Ukraine"
+    },
+    "onboarding": {
+        "audienceSegments": {
+            "im_a_ugs_student": "I'm a UGS student or alum",
+            "i_left_ukraine_after_february_24_2022": "I left Ukraine after February 24, 2022",
+            "i_left_ukraine_before_the_full_scale_invasion": "I left Ukraine before the full-scale invasion",
+            "im_ukrainian_diaspora_born_abroad": "I'm Ukrainian diaspora — born abroad",
+            "i_live_in_ukraine": "I live in Ukraine",
+            "im_an_international_professional": "I'm an international professional interested in working in Ukraine"
+        },
+        "opportunityTypes": {
+            "full_time": "Full-time job job",
+            "part_time": "Part-time job job",
+            "internship": "Internship",
+            "short_term_project": "Short-term project or fellowship",
+            "volunteering": "Volunteering for Ukraine"
+        },
+        "sectors": {
+            "agriculture_&_agritech": "Agriculture & AgriTech",
+            "education": "Education",
+            "energy_&_infrastructure": "Energy & infrastructure",
+            "finance_&_fintech": "Finance & FinTech",
+            "government_&_public_sector": "Government & public sector",
+            "healthcare_&_medtech": "Healthcare & MedTech",
+            "international_organizations": "International organizations",
+            "media_&_communications": "Media & communications",
+            "miltech_&_defense": "MilTech & Defense",
+            "ngo_&_civil_society": "NGO & civil society",
+            "technology_&_it": "Technology & IT",
+            "urban_development": "Urban development"
+        },
+        "professionalAreas": {
+            "business_analysis": "Business analysis",
+            "customer_&_tech_support": "Customer & tech support",
+            "data_analytics": "Data analytics",
+            "design": "Design",
+            "engineering_&_manufacturing": "Engineering & manufacturing",
+            "executive_&_leadership_roles": "Executive & leadership roles",
+            "finance_&_accounting": "Finance & accounting",
+            "hr_&_recruiting": "HR & recruiting",
+            "legal_&_compliance": "Legal & compliance",
+            "logistics_&_supply_chain": "Logistics & supply chain",
+            "management": "Management",
+            "marketing": "Marketing",
+            "media": "Media",
+            "product_management": "Product management",
+            "project_management": "Project management",
+            "sales_&_business_development": "Sales & business development",
+            "software_development": "Software development",
+            "teaching_&_education": "Teaching & education"
+        },
+        "workLocationPreferences": {
+            "remote": "Remotely, from where I am now",
+            "no_preference": "No preference - show me everything",
+            "ukraine": "In Ukraine - I'm here or planning to move"
+        },
+        "regions": {
+            "cherkasy": "Cherkasy",
+            "chernihiv": "Chernihiv",
+            "chernivtsi": "Chernivtsi",
+            "crimea": "Crimea",
+            "dnipropetrovsk": "Dnipropetrovsk",
+            "donetsk": "Donetsk",
+            "ivano_frankivsk": "Ivano-Frankivsk",
+            "kharkiv": "Kharkiv",
+            "kherson": "Kherson",
+            "khmelnytskyi": "Khmelnytskyi",
+            "kirovohrad": "Kirovohrad",
+            "kyiv": "Kyiv",
+            "kyiv_oblast": "Kyiv Oblast",
+            "luhansk": "Luhansk",
+            "lviv": "Lviv",
+            "mykolaiv": "Mykolaiv",
+            "odesa": "Odesa",
+            "poltava": "Poltava",
+            "rivne": "Rivne",
+            "sumy": "Sumy",
+            "ternopil": "Ternopil",
+            "vinnytsia": "Vinnytsia",
+            "volyn": "Volyn",
+            "zakarpattia": "Zakarpattia",
+            "zaporizhzhia": "Zaporizhzhia",
+            "zhytomyr": "Zhytomyr"
+        }
+    },
+    "experience": {
+        "degrees": {
+            "bachelors": "Bachelor's",
+            "masters": "Master's",
+            "phd": "PhD",
+            "other": "Other"
+        },
+        "languageLevels": {
+            "a1": "A1 (Beginner)",
+            "a2": "A2 (Elementary)",
+            "b1": "B1 (Intermediate)",
+            "b2": "B2 (Upper-intermediate)",
+            "c1": "C1 (Advanced)",
+            "c2": "C2 (Proficient)",
+            "native": "Native"
+        }
+    }
+}

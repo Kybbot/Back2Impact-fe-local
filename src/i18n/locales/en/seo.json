@@ -1,0 +1,49 @@
+{
+    "fallback": {
+        "title": "{{site}} — jobs in Ukraine",
+        "description": "Find a job in Ukraine that matches your experience. Browse vacancies across sectors, professions and work formats."
+    },
+    "error": {
+        "notFound": {
+            "title": "Page not found — {{site}}"
+        },
+        "generic": {
+            "title": "Something went wrong — {{site}}"
+        }
+    },
+    "home": {
+        "title": "{{site}} — start your career in Ukraine",
+        "description": "Find a job in Ukraine that matches your experience. Browse vacancies across sectors, professions and work formats."
+    },
+    "jobsAll": {
+        "title": "All vacancies — {{site}}",
+        "titlePaged": "All vacancies — page {{page}} — {{site}}",
+        "description": "Browse all open vacancies in Ukraine. Filter by profession, sphere, work format, employment type and seniority level."
+    },
+    "jobsForYou": {
+        "title": "Vacancies for you — {{site}}"
+    },
+    "jobsSaved": {
+        "title": "Saved vacancies — {{site}}"
+    },
+    "jobsApplied": {
+        "title": "Applied vacancies — {{site}}"
+    },
+    "auth": {
+        "title": "Log in or sign up — {{site}}"
+    },
+    "employersAuth": {
+        "title": "Employer log in or sign up — {{site}}"
+    },
+    "resetPassword": {
+        "title": "Reset your password — {{site}}"
+    },
+    "verifyEmail": {
+        "title": "Verify your email — {{site}}"
+    },
+    "job": {
+        "title": "{{name}} — {{company}} — {{site}}",
+        "descriptionFallback": "{{name}} position at {{company}}. Apply on {{site}}."
+    },
+    "jobFallback": "Vacancy — {{site}}"
+}

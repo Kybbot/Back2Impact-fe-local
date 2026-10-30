@@ -1,0 +1,132 @@
+/* a textarea's box around a tiptap editor: the formatting toolbar on top of the text; the label and the
+   error are the textarea's own */
+
+.richTextEditor__field {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 8px;
+    background-color: #fafafa;
+    border: 1px solid transparent;
+}
+
+.richTextEditor__field:focus-within {
+    border-color: #333333;
+}
+
+.richTextEditor__field--error,
+.richTextEditor__field--error:focus-within {
+    border-color: #ea3d2c;
+}
+
+.richTextEditor__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px;
+    border-bottom: 1px solid #3333331f;
+}
+
+.richTextEditor__group {
+    display: flex;
+    gap: 2px;
+}
+
+.richTextEditor__group + .richTextEditor__group {
+    padding-left: 8px;
+    border-left: 1px solid #3333331f;
+}
+
+.richTextEditor__tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333333;
+
+    min-width: 32px;
+    height: 32px;
+    padding: 0 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
+}
+
+.richTextEditor__tool:hover {
+    background-color: #3333330f;
+}
+
+.richTextEditor__tool[aria-pressed="true"] {
+    background-color: #3333331f;
+}
+
+.richTextEditor__tool:focus-visible {
+    outline: 2px solid #333333;
+}
+
+.richTextEditor__tool:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    background-color: transparent;
+}
+
+.richTextEditor__tool b {
+    font-weight: 700;
+}
+
+/* a long description scrolls under the toolbar rather than pushing it away */
+.richTextEditor__content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.richTextEditor .tiptap {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.2%;
+    color: #333333;
+    overflow-wrap: break-word;
+
+    /* as tall as the six-row textarea it replaces */
+    min-height: 250px;
+    padding: 15.5px 16px;
+    outline: none;
+}
+
+/* the sizes the vacancy page shows them in */
+.richTextEditor .tiptap h1 {
+    font-size: 20px;
+}
+
+.richTextEditor .tiptap h2 {
+    font-size: 18px;
+}
+
+.richTextEditor .tiptap h3 {
+    font-size: 16px;
+}
+
+.richTextEditor .tiptap ul,
+.richTextEditor .tiptap ol {
+    padding-left: 24px;
+}
+
+.richTextEditor .tiptap p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+
+    font-weight: 500;
+    color: #33333399;
+}

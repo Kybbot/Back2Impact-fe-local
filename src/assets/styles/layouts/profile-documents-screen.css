@@ -1,0 +1,234 @@
+.documents-screen {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.documents-screen__header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #f1f1f1;
+    background-color: #ffffffcc;
+}
+
+.documents-screen__emoji-container {
+    font-weight: 500;
+    line-height: 120%;
+    font-size: 26.35px;
+
+    padding: 12px 15px;
+    border-radius: 12px;
+    background-color: #f7f6f3;
+}
+
+.documents-screen__header-main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.documents-screen__heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #3d3f41;
+}
+
+.documents-screen__description {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #33333399;
+}
+
+.documents-screen__main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.documents-screen__file-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.documents-screen__file-section-header .documents-screen__description {
+    max-width: calc(100% - 130px);
+}
+
+.documents-screen__file-section-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documents-screen__file-section-heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+.documents-screen__add-file-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #4577c9;
+    cursor: pointer;
+    background-color: #f0f6ff;
+}
+
+.documents-screen__add-icon {
+    transform: translateY(1px);
+}
+
+.documents-screen__file-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.documents-screen__file {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #e8e8e880;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+}
+
+.documents-screen__bar {
+    width: 15px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #e1edff;
+}
+
+.documents-screen__file-main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.documents-screen__file-name {
+    width: calc(100% - 150px);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+.documents-screen__file-description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #33333399;
+}
+
+.documents-screen__file-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.documents-screen__download-file-btn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #838383;
+    cursor: pointer;
+}
+
+.documents-screen__delete-file-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.documents-screen__letter-text-area {
+    display: block;
+    height: 216px;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 16px;
+    background-color: #fafafa;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    outline: none;
+}
+
+.documents-screen__dark-background {
+    inset: 0;
+    position: fixed;
+    backdrop-filter: blur(4px);
+    background-color: #56565666;
+    animation: dialogOverlayShow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.documents-screen__dark-background[data-state="closed"] {
+    animation: dialogOverlayHide 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.documents-screen__error-toast {
+    width: 430px;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 215px);
+}
+
+@keyframes dialogOverlayShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes dialogOverlayHide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

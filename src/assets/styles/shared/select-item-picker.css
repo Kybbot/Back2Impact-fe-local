@@ -1,0 +1,53 @@
+.select-item-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.select-item-picker__select-container {
+    position: relative;
+}
+
+.select-item-picker__select-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 16px;
+}
+
+.select-item-picker__select {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 16px;
+    background-color: #FFFFFF;
+    appearance: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #333333
+}
+
+.select-item-picker__selected-items-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.select-item-picker__selected-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border-radius: 32px;
+    padding: 10px 16px 9px;
+    background-color: #FFFFFF;
+}

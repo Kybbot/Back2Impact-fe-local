@@ -1,0 +1,86 @@
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    height: 80px;
+    border-radius: 16px;
+    padding: 16px 24px;
+    background-color: #ffffff;
+}
+
+.profile-header__logo {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3d3f41;
+    text-decoration: none;
+}
+
+.profile-header__nav {
+    display: flex;
+    gap: 35px;
+}
+
+.profile-header__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #33333399;
+    text-decoration: none;
+}
+
+.profile-header__nav-link:hover {
+    color: #333333;
+}
+
+.profile-header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0 0 0 auto;
+}
+
+.profile-header__profile-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-header__user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+}
+
+.profile-header__profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    background-color: pink;
+}
+
+.profile-header__profile-pic-container:has(.profile-header__profile-pic) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.profile-header__profile-pic {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.profile-header__user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+}

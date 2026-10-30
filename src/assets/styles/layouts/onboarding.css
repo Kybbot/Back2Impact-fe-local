@@ -1,0 +1,205 @@
+.onboarding-layout {
+    display: grid;
+    gap: 32px;
+    min-height: 100dvh;
+    padding-top: 41px;
+    padding-bottom: 96px;
+    background-color: #f7f6f3;
+    grid-template-rows: auto 1fr;
+}
+
+.onboarding-layout--done {
+    padding-top: 20px;
+    grid-template-rows: 1fr;
+}
+
+.onboarding-layout__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.onboarding-layout__central-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    gap: 10px;
+}
+
+.onboarding-layout__logo {
+    display: flex;
+}
+
+.onboarding-layout__logo--desktop {
+    display: none;
+}
+
+.onboarding-layout__status-bar {
+    display: none;
+}
+
+.onboarding-layout__language-switcher {
+    justify-self: end;
+}
+
+.onboarding-layout__step-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 24px;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #333333;
+    background-color: #c6dbfc;
+}
+
+.onboarding-layout__bottom-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+    width: 100%;
+    max-width: 344px;
+}
+
+.onboarding-layout__nav {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+}
+
+.onboarding-layout__nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    cursor: pointer;
+}
+
+.onboarding-layout__nav-btn:disabled {
+    cursor: auto;
+}
+
+.onboarding-layout__nav-btn_back {
+    color: #333333;
+    background-color: #f1efe9;
+}
+
+.onboarding-layout__nav-btn_back:hover {
+    background-color: #ede9e4;
+}
+
+.onboarding-layout__nav-btn_next {
+    color: #f7f6f3;
+    background-color: #333333;
+}
+
+/* .onboarding-layout__nav-btn_next:hover:not(.onboarding-layout__nav-btn_next-loader), */
+.onboarding-layout__nav-btn_next:not(.onboarding-layout__nav-btn_next:disabled):hover {
+    background-color: #181818;
+}
+
+.onboarding-layout__nav-btn_next-loader {
+    background: linear-gradient(90deg, #333333 35%, #4a4a4a 50%, #333333 65%);
+    background-size: 200% 100%;
+    animation: btn-loading 3s infinite linear;
+}
+
+@keyframes btn-loading {
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+}
+
+.onboarding-layout__nav-btn_next:disabled {
+    color: #adadad;
+    background-color: #33333314;
+}
+
+.onboarding-layout__nav-btn_fixed {
+    flex: none;
+    width: 245px;
+    margin: 0 auto;
+}
+
+.onboarding-layout__edit-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -1%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    color: #3d3f41;
+}
+
+@media screen and (min-width: 744px) {
+    .onboarding-layout {
+        gap: 65px;
+    }
+
+    .onboarding-layout--done {
+        padding-top: 50px;
+        grid-template-rows: 1fr;
+    }
+
+    .onboarding-layout__header {
+        display: grid;
+        grid-template-columns: minmax(max-content, 1fr) minmax(0, 592px) minmax(max-content, 1fr);
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 24px;
+        max-width: 1200px;
+    }
+
+    .onboarding-layout__status-bar {
+        display: flex;
+        gap: 3px;
+        width: 100%;
+        max-width: 592px;
+    }
+
+    .onboarding-layout__nav {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .onboarding-layout__logo--mobile {
+        display: none;
+    }
+
+    .onboarding-layout__logo--desktop {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    .onboarding-layout__header {
+        padding: 0;
+    }
+}

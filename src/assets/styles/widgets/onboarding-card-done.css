@@ -1,0 +1,101 @@
+.done-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.done-card__confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.done-card__header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 325px;
+}
+
+.done-card__main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 461px;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.done-card__part {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.done-card__label-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 150px;
+    height: 25px;
+}
+
+.done-card__emoji-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+.done-card__emoji-container span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.done-card__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #33333399;
+}
+
+.done-card__result {
+    width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #333333;
+}
+
+.done-card__result_cv {
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.done-card__line {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #f1efe9;
+}
+
+@media screen and (min-width: 744px) {
+    .done-card__part {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

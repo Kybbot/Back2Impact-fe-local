@@ -1,0 +1,65 @@
+.radio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio__control {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #33333333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333333;
+
+  opacity: 0;
+}
+
+/* Checked */
+
+.radio__input:checked + .radio__control {
+  border-color: #333333;
+}
+
+.radio__input:checked + .radio__control .radio__dot {
+  opacity: 1;
+}
+
+/* Hover */
+
+.radio:hover .radio__control {
+  border-color: #5b9cff;
+}
+
+/* Focus */
+
+.radio__input:focus-visible + .radio__control {
+  outline: 2px solid #84b8ff;
+  outline-offset: 3px;
+}
+
+/* Disabled */
+
+.radio--disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}

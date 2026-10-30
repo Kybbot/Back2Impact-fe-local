@@ -1,0 +1,19 @@
+.onboarding-layout__cv-error-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 365px;
+    border: 1px solid #ffe8e5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #ffd8d466;
+}
+
+.onboarding-layout__cv-error-message {
+    flex: 1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.2%;
+    color: #000000;
+}

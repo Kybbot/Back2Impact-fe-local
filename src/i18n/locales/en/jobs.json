@@ -1,0 +1,108 @@
+{
+    "all": {
+        "heading": "Jobs in Ukraine"
+    },
+    "filters": {
+        "searchPlaceholder": "e.g. Front-end engineer",
+        "searchAlt": "Search",
+        "sortHint": "A-Z",
+        "selectedCount_one": "Filters selected: {{count}}",
+        "selectedCount_other": "Filters selected: {{count}}",
+        "clearAll": "Clear all",
+        "open": "Filters",
+        "trigger": "Filter",
+        "close": "Close filters",
+        "headings": {
+            "professionalAreas": "Profession / Area",
+            "spheres": "Sphere",
+            "workFormats": "Work Format",
+            "employmentTypes": "Employment type",
+            "seniorityLevels": "Seniority level"
+        }
+    },
+    "card": {
+        "match": "match",
+        "saved": "Saved",
+        "unsaved": "Removed from saved",
+        "undo": "Undo",
+        "apply": "Apply",
+        "applied": "Applied",
+        "appliedWithStatus": "Applied ({{status}})",
+        "companyLogoAlt": "{{company}} logo",
+        "salary": "{{min}}",
+        "salary_range": "{{min}} - {{max}}",
+        "salary_max": "up to {{max}}",
+        "currency": {
+            "usdPerMonth": "USD/month",
+            "eurPerMonth": "EUR/month",
+            "uahPerMonth": "UAH/month",
+            "usdPerProject": "USD per project",
+            "unpaid": "Unpaid"
+        },
+        "languages": {
+            "english": "English: {{level}}",
+            "ukrainian": "Ukrainian: {{level}}"
+        },
+        "seniorityRange": "{{from}} – {{to}}",
+        "published": "Published: {{date}}"
+    },
+    "applyStatus": {
+        "new": "new",
+        "in_review": "in review",
+        "invited": "invited",
+        "hired": "hired",
+        "not_a_fit": "not a fit"
+    },
+    "forYou": {
+        "heading": "Get vacancies matched to you",
+        "description": "Take a short quiz and we'll personalise this feed based on your interests, work format and experience.",
+        "signUp": "Sign up & take the quiz",
+        "hasAccount": "Already have an account?",
+        "logIn": "Log in"
+    },
+    "empty": {
+        "browseAll": "Browse all vacancies",
+        "noResults": {
+            "heading": "No vacancies found",
+            "description": "Try adjusting your filters or search query",
+            "action": "Clear filters"
+        },
+        "saved": {
+            "heading": "No saved vacancies",
+            "description": "Bookmark vacancies to find them here easily"
+        },
+        "applied": {
+            "heading": "No applications yet",
+            "description": "Start applying to vacancies that match your profile"
+        }
+    },
+    "savePopup": {
+        "heading": "Sign up to save vacancies",
+        "action": "Sign up"
+    },
+    "apply": {
+        "close": "Close",
+        "okay": "Okay",
+        "cancel": "Cancel",
+        "confirm": "Confirm & Apply",
+        "successHeading": "You've successfully applied!",
+        "coverLetter": "Cover letter",
+        "additionalDocument": "Additional document",
+        "letterPlaceholder": "Tell the employer why you're interested in this opportunity...",
+        "uploadCv": "Upload your CV",
+        "uploadDocument": "Upload a document",
+        "uploadDifferent": "Upload different file",
+        "savedDocuments": "Your documents",
+        "uploadFromDevice": "Upload from device",
+        "review": "Review your application before sending",
+        "successDescription": "Employer will review your application and we will notify you on your email <email>{{email}}</email> address",
+        "sent": "Application sent!",
+        "charactersCount": "{{current}}/{{max}} characters",
+        "letterHint_one": "Required field, enter at least {{count}} character",
+        "letterHint_other": "Required field, enter at least {{count}} characters"
+    },
+    "loadingMore": "Loading…",
+    "showMore": "Show more vacancies",
+    "totalVacancies_one": "Total {{count}} vacancy",
+    "totalVacancies_other": "Total {{count}} vacancies"
+}

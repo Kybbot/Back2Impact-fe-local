@@ -1,0 +1,31 @@
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-header__heading {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #3d3f41;
+}
+
+.card-header__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #3d3f4199;
+}
+
+@media screen and (min-width: 744px) {
+    .card-header__heading {
+        font-size: 28px;
+    }
+}

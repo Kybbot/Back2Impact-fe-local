@@ -1,0 +1,114 @@
+{
+    "all": {
+        "heading": "Робота в Україні"
+    },
+    "filters": {
+        "searchPlaceholder": "напр. Front-end інженер",
+        "searchAlt": "Пошук",
+        "sortHint": "А-Я",
+        "selectedCount_one": "Обрано фільтрів: {{count}}",
+        "selectedCount_few": "Обрано фільтрів: {{count}}",
+        "selectedCount_many": "Обрано фільтрів: {{count}}",
+        "selectedCount_other": "Обрано фільтрів: {{count}}",
+        "clearAll": "Очистити все",
+        "open": "Фільтри",
+        "trigger": "Фільтр",
+        "close": "Закрити фільтри",
+        "headings": {
+            "professionalAreas": "Професія / Напрям",
+            "spheres": "Сфера",
+            "workFormats": "Формат роботи",
+            "employmentTypes": "Тип зайнятості",
+            "seniorityLevels": "Рівень позиції"
+        }
+    },
+    "card": {
+        "match": "збіг",
+        "saved": "Збережено",
+        "unsaved": "Видалено зі збережених",
+        "undo": "Скасувати",
+        "apply": "Податися",
+        "applied": "Подано",
+        "appliedWithStatus": "Подано ({{status}})",
+        "companyLogoAlt": "Логотип {{company}}",
+        "salary": "{{min}}",
+        "salary_range": "{{min}} – {{max}}",
+        "salary_max": "до {{max}}",
+        "currency": {
+            "usdPerMonth": "USD/міс",
+            "eurPerMonth": "EUR/міс",
+            "uahPerMonth": "Грн/міс",
+            "usdPerProject": "USD за проєкт",
+            "unpaid": "Без оплати"
+        },
+        "languages": {
+            "english": "Англійська: {{level}}",
+            "ukrainian": "Українська: {{level}}"
+        },
+        "seniorityRange": "{{from}} – {{to}}",
+        "published": "Опубліковано: {{date}}"
+    },
+    "applyStatus": {
+        "new": "нова",
+        "in_review": "на розгляді",
+        "invited": "запрошено",
+        "hired": "найнято",
+        "not_a_fit": "відмова"
+    },
+    "forYou": {
+        "heading": "Отримуйте вакансії, дібрані під вас",
+        "description": "Пройдіть коротке опитування — і ми персоналізуємо цю стрічку за вашими інтересами, форматом роботи та досвідом.",
+        "signUp": "Зареєструватися та пройти опитування",
+        "hasAccount": "Уже маєте акаунт?",
+        "logIn": "Увійти"
+    },
+    "empty": {
+        "browseAll": "Переглянути всі вакансії",
+        "noResults": {
+            "heading": "Вакансій не знайдено",
+            "description": "Спробуйте змінити фільтри або пошуковий запит",
+            "action": "Очистити фільтри"
+        },
+        "saved": {
+            "heading": "Немає збережених вакансій",
+            "description": "Додавайте вакансії в закладки, щоб швидко знаходити їх тут"
+        },
+        "applied": {
+            "heading": "Ще немає відгуків",
+            "description": "Подавайтеся на вакансії, які відповідають вашому профілю"
+        }
+    },
+    "savePopup": {
+        "heading": "Зареєструйтеся, щоб зберігати вакансії",
+        "action": "Зареєструватися"
+    },
+    "apply": {
+        "close": "Закрити",
+        "okay": "Гаразд",
+        "cancel": "Скасувати",
+        "confirm": "Підтвердити та подати",
+        "successHeading": "Ви успішно подалися!",
+        "coverLetter": "Супровідний лист",
+        "additionalDocument": "Додатковий документ",
+        "letterPlaceholder": "Розкажіть роботодавцю, чому вас зацікавила ця можливість…",
+        "uploadCv": "Завантажити резюме",
+        "uploadDocument": "Завантажити документ",
+        "uploadDifferent": "Завантажити інший файл",
+        "savedDocuments": "Ваші документи",
+        "uploadFromDevice": "Завантажити з пристрою",
+        "review": "Перевірте заявку перед надсиланням",
+        "successDescription": "Роботодавець розгляне вашу заявку, і ми повідомимо вам на пошту <email>{{email}}</email>",
+        "sent": "Заявку надіслано!",
+        "charactersCount": "{{current}}/{{max}} символів",
+        "letterHint_one": "Обов'язкове поле, введіть щонайменше {{count}} символ",
+        "letterHint_few": "Обов'язкове поле, введіть щонайменше {{count}} символи",
+        "letterHint_many": "Обов'язкове поле, введіть щонайменше {{count}} символів",
+        "letterHint_other": "Обов'язкове поле, введіть щонайменше {{count}} символів"
+    },
+    "loadingMore": "Завантаження…",
+    "showMore": "Показати більше вакансій",
+    "totalVacancies_one": "Усього {{count}} вакансія",
+    "totalVacancies_few": "Усього {{count}} вакансії",
+    "totalVacancies_many": "Усього {{count}} вакансій",
+    "totalVacancies_other": "Усього {{count}} вакансій"
+}

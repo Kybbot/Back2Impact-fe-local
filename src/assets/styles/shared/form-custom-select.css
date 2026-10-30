@@ -1,0 +1,226 @@
+.customSelect__wrapper {
+    display: grid;
+    gap: 4px;
+}
+
+.customSelect__label {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #33333399;
+
+    display: flex;
+    gap: 2px;
+}
+
+.customSelect__asterisk {
+    color: #ea3d2c;
+}
+
+.customSelect__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #333333;
+    text-align: left;
+    cursor: pointer;
+
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    padding: 13.5px 16px;
+    background-color: #fafafa;
+    border: 1px solid transparent;
+}
+
+.customSelect__trigger:focus-visible {
+    border: 1px solid #333333;
+}
+
+.customSelect__trigger[data-placeholder] {
+    color: #33333399;
+}
+
+.customSelect__trigger[data-state="open"] {
+    border: 1px solid #333333;
+}
+
+.customSelect__trigger[data-state="closed"]:focus-visible {
+    border: 1px solid #333333;
+}
+
+.customSelect__trigger[data-disabled] {
+    cursor: not-allowed;
+}
+
+.customSelect__trigger[data-disabled] .customSelect__icon {
+    opacity: 0.5;
+}
+
+.customSelect__trigger:focus-visible.customSelect__trigger--error {
+    border: 1px solid #ea3d2c;
+}
+
+.customSelect__trigger--error {
+    border: 1px solid #ea3d2c;
+}
+
+.customSelect__trigger--lng {
+    padding: 2px 4px;
+    background-color: transparent;
+}
+
+.customSelect__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.customSelect__icon > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.customSelect__trigger[data-state="open"] > .customSelect__icon {
+    transform: rotate(180deg);
+}
+
+.customSelect__error {
+    font-family: "Fixel";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #ea3d2c;
+}
+
+.customSelect__content {
+    overflow: hidden;
+    max-height: 375px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 24px 0px #262c4729;
+}
+
+.customSelect__content--triggerWidth {
+    width: var(--radix-select-trigger-width);
+}
+
+.customSelect__item {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+
+    display: flex;
+    user-select: none;
+    align-items: center;
+    padding: 15.5px 16px;
+    transition: all 0.2s ease-in;
+}
+
+.customSelect__item[data-disabled] {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.customSelect__item[data-state="checked"] {
+    outline: none;
+    cursor: pointer;
+    color: #4577c9;
+    background-color: #f0f6ff;
+}
+
+.customSelect__item[data-highlighted] {
+    outline: none;
+    cursor: pointer;
+    color: #4577c9;
+    background-color: #f0f6ff;
+}
+
+/* CustomSearchSelect */
+
+.customSearchSelect__field {
+    cursor: text;
+}
+
+.customSearchSelect__field:focus-within {
+    border: 1px solid #333333;
+}
+
+.customSearchSelect__field.customSelect__trigger--error:focus-within {
+    border: 1px solid #ea3d2c;
+}
+
+.customSearchSelect__field[data-disabled] {
+    cursor: not-allowed;
+}
+
+.customSearchSelect__input {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+}
+
+.customSearchSelect__input::placeholder {
+    color: #33333399;
+}
+
+.customSearchSelect__input:disabled {
+    cursor: not-allowed;
+}
+
+.customSearchSelect__field .customSelect__icon {
+    cursor: pointer;
+}
+
+.customSearchSelect__content {
+    width: var(--radix-popover-trigger-width);
+}
+
+.customSearchSelect__list {
+    /* `offsetTop` of the options is measured from here, see `scrollToOption` */
+    position: relative;
+    max-height: min(375px, var(--radix-popover-content-available-height));
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.customSearchSelect__option-text {
+    display: grid;
+    gap: 4px;
+}
+
+.customSearchSelect__option-description {
+    font-size: 12px;
+    font-weight: 400;
+    color: #33333399;
+}
+
+.customSearchSelect__empty {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+
+    padding: 15.5px 16px;
+}

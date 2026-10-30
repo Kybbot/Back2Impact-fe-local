@@ -1,0 +1,386 @@
+{
+    "nav": {
+        "label": "Navigation",
+        "dashboard": "Dashboard",
+        "vacancies": "Vacancies",
+        "candidates": "Candidates",
+        "settings": "Settings",
+        "logout": "Log out"
+    },
+    "setup": {
+        "heading": "Tell candidates who you are",
+        "subheading": "This appears on every vacancy you post. You can change it any time.",
+        "logo": {
+            "label": "Logo",
+            "upload": "Upload logo",
+            "replace": "Replace logo",
+            "uploading": "Uploading…",
+            "hint": "PNG or SVG, square, up to 2 MB.",
+            "alt": "Company logo"
+        },
+        "fields": {
+            "name": "Company name",
+            "namePlaceholder": "Your company name",
+            "about": "What your company does",
+            "aboutHint": "Two or three sentences. Candidates read this before they read the role.",
+            "aboutUk": "In Ukrainian",
+            "aboutEn": "In English",
+            "aboutUkPlaceholder": "Наприклад: Ми допомагаємо талановитим українським студентам із малозабезпечених родин вступати до найкращих навчальних закладів світу — і підтримуємо їх на шляху додому.",
+            "aboutEnPlaceholder": "e.g. We help talented Ukrainian students from low-income families win scholarships to the world's best schools — and support them on the way back home.",
+            "charactersCount": "{{current}} / {{max}}",
+            "website": "Website",
+            "websitePlaceholder": "https://",
+            "companySize": "Company size",
+            "companySizePlaceholder": "Select",
+            "companySizeOption": "{{range}} employees",
+            "sectors": "Sector",
+            "sectorsHint": "Pick up to 3. This is one of the signals we use to match candidates.",
+            "headquarters": "Headquarters",
+            "headquartersPlaceholder": "e.g. Kyiv, Ukraine",
+            "founded": "Founded",
+            "foundedPlaceholder": "e.g. 2015",
+            "email": "Email for applications",
+            "emailPlaceholder": "hiring@company.com",
+            "emailHint": "Where we email you about applications to your vacancies."
+        },
+        "skip": "Skip for now",
+        "submit": "Save and continue"
+    },
+    "dashboard": {
+        "welcome": "Welcome back, {{name}}",
+        "welcomeDescription": "Here's what's happening with your roles.",
+        "postVacancy": "Post a vacancy",
+        "stats": {
+            "publishedJobs": "Published vacancies",
+            "vacancyViews": "Vacancy views",
+            "applications": "Candidates",
+            "new_one": "+{{count}} new",
+            "new_other": "+{{count}} new"
+        },
+        "pending": {
+            "heading": "{{name}} is on review",
+            "description": "We check the first vacancy from every new company. It goes live within one working day."
+        },
+        "expiring": {
+            "heading_one": "{{count}} vacancy expires soon",
+            "heading_other": "{{count}} vacancies expire soon",
+            "showAll": "Show all",
+            "hide": "Hide",
+            "expiresAt": "Expires on {{date}}",
+            "extend": "Extend"
+        },
+        "incomplete": {
+            "heading": "Finish your company profile",
+            "description": "Candidates read it on every vacancy. Once it's filled in, you can post vacancies and see candidates.",
+            "action": "Fill in"
+        },
+        "profile": {
+            "heading": "Company profile",
+            "description": "This block appears on every vacancy you post.",
+            "edit": "Edit",
+            "about": "What we do"
+        },
+        "preview": {
+            "heading": "How candidates see you",
+            "description": "A preview of the company block on your vacancy card."
+        },
+        "edit": {
+            "heading": "Company profile",
+            "close": "Close",
+            "cancel": "Cancel",
+            "save": "Save",
+            "saved": "Company profile saved"
+        }
+    },
+    "vacancies": {
+        "heading": "Vacancies",
+        "description": "Everything you've posted, in one place.",
+        "postVacancy": "Post a vacancy",
+        "empty": {
+            "heading": "No vacancies yet",
+            "description": "Post your first role and it will reach candidates whose profile matches what you're looking for."
+        },
+        "table": {
+            "vacancy": "Vacancy",
+            "status": "Status",
+            "views": "Views",
+            "candidates": "Candidates",
+            "closes": "Closes",
+            "actions": "Actions",
+            "notFinished": "Not finished",
+            "untitled": "Untitled vacancy"
+        },
+        "status": {
+            "draft": "Draft",
+            "pending_review": "On review",
+            "published": "Published",
+            "rejected": "Rejected",
+            "expired": "Expired",
+            "closed": "Closed"
+        },
+        "actions": {
+            "continue": "Continue",
+            "edit": "Edit",
+            "duplicate": "Duplicate",
+            "reopen": "Reopen",
+            "close": "Close",
+            "delete": "Delete",
+            "candidates": "Candidates"
+        },
+        "close": {
+            "heading": "Close this vacancy",
+            "description": "One question before it comes down. We use this to see whether Back2Impact actually gets people hired — and to report it back to the partners funding the platform.",
+            "reason": "What happened with this role?",
+            "reasons": {
+                "hired_via_platform": "We hired someone through Back2Impact",
+                "hired_elsewhere": "We hired someone, but found them elsewhere",
+                "paused": "Still hiring — just pausing the ad",
+                "cancelled": "The role was cancelled"
+            },
+            "submit": "Close vacancy",
+            "closed": "Vacancy closed"
+        },
+        "reopen": {
+            "heading": "Reopen vacancy",
+            "description": "{{name}} will accept applications again. Everything else stays as it is.",
+            "submit": "Reopen",
+            "success": "Vacancy reopened"
+        },
+        "extend": {
+            "heading": "Extend vacancy",
+            "description": "Pick a new deadline for {{name}}. Everything else stays as it is.",
+            "submit": "Extend",
+            "success": "Vacancy extended"
+        },
+        "delete": {
+            "heading": "Delete draft",
+            "description": "{{name}} will be deleted for good. This can't be undone.",
+            "submit": "Delete",
+            "success": "Draft deleted"
+        }
+    },
+    "candidates": {
+        "heading": "Candidates",
+        "description": "Everyone who applied to your roles, with their match score.",
+        "filters": {
+            "search": "Search candidates",
+            "searchPlaceholder": "Search by candidate or vacancy",
+            "status": "Status",
+            "allStatuses": "All statuses"
+        },
+        "empty": {
+            "heading": "No candidates yet",
+            "description": "When someone applies to one of your vacancies, they'll show up here."
+        },
+        "notFound": {
+            "heading": "Nobody matches",
+            "description": "Try a different search or status."
+        },
+        "table": {
+            "candidate": "Candidate",
+            "vacancy": "Vacancy",
+            "match": "Match",
+            "applied": "Applied",
+            "status": "Status",
+            "actions": "Actions",
+            "view": "View"
+        },
+        "status": {
+            "new": "New",
+            "in_review": "In review",
+            "invited": "Invited",
+            "hired": "Hired",
+            "not_a_fit": "Not a fit"
+        },
+        "workLocation": {
+            "remote": "Remote only",
+            "relocate": "Ready to relocate",
+            "relocateToUkraine": "Ready to relocate to Ukraine",
+            "inUkraine": "Already in Ukraine",
+            "anywhere": "Open to remote or relocation"
+        },
+        "dialog": {
+            "close": "Close",
+            "match": "{{score}} match",
+            "applied": "Applied {{date}} to {{vacancy}}",
+            "status": "Status",
+            "statusHint": "Only you see this. The candidate is told when you invite them, mark them hired, or close their application.",
+            "statusSaved": "Status updated",
+            "details": {
+                "basedIn": "Based in",
+                "workLocation": "Work location",
+                "lookingFor": "Looking for",
+                "professions": "Professions",
+                "sectors": "Sectors",
+                "languages": "Languages"
+            },
+            "nativeLanguage": "{{language}} (native)",
+            "experience": "Experience",
+            "present": "present",
+            "attached": "Attached",
+            "files": {
+                "cv": "CV",
+                "attachment": "Portfolio or work samples"
+            },
+            "download": "Download",
+            "coverLetter": "Cover letter",
+            "notAFit": "Not a fit",
+            "invite": "Invite to interview"
+        },
+        "statusChange": {
+            "emailDescription": "We'll email this to {{name}} and show it in their Back2Impact account. There's no messaging inside the platform yet — they'll reply to you directly.",
+            "message": "Message",
+            "messageHint": "Edit freely — this is a starting point, not a template you have to keep.",
+            "replyTo": "Reply to",
+            "replyToHint": "The address they will write back to.",
+            "bookingLink": "Booking link",
+            "bookingLinkPlaceholder": "Calendly, Google Calendar, anything (optional)",
+            "cancel": "Cancel",
+            "invited": {
+                "heading": "Invite {{name}} to interview",
+                "messageDefault": "Hi {{name}}, thank you for applying to the {{vacancy}} role. We'd like to meet you. Could you share a few times that work for you next week?",
+                "submit": "Send invitation"
+            },
+            "hired": {
+                "heading": "Mark {{name}} as hired",
+                "messageDefault": "Hi {{name}}, we're glad to let you know that we'd like you to join us in the {{vacancy}} role. Congratulations! We'll be in touch shortly about the next steps.",
+                "submit": "Mark as hired"
+            },
+            "not_a_fit": {
+                "heading": "Not a fit for this role",
+                "description": "{{name}} will see this application marked as closed in their account. Being told is better than being left waiting.",
+                "sendNote": "Send them a short note",
+                "sendNoteHint": "we'll email a brief, neutral message on your behalf.",
+                "note": "Add a line of your own",
+                "notePlaceholder": "Optional. One sentence on what didn't match is worth a lot to someone job hunting.",
+                "submit": "Confirm"
+            }
+        }
+    },
+    "vacancyForm": {
+        "createHeading": "Post a vacancy",
+        "editHeading": "Edit vacancy",
+        "close": "Close",
+        "cancel": "Cancel",
+        "save": "Save",
+        "saveDraft": "Save as draft",
+        "publish": "Publish vacancy",
+        "saved": "Vacancy saved",
+        "draftSaved": "Draft saved",
+        "published": "Vacancy published",
+        "role": {
+            "heading": "The role",
+            "description": "What the job is called and what it involves.",
+            "title": "Job title",
+            "inUkrainian": "In Ukrainian",
+            "inEnglish": "In English",
+            "titleUkPlaceholder": "Наприклад: Менеджер із фандрейзингу та партнерств",
+            "titleEnPlaceholder": "e.g. Fundraising and Partnership Manager",
+            "about": "About the role",
+            "aboutHint": "Responsibilities, the experience you're looking for, how the team works. Don't add links or emails here — candidates apply through Back2Impact.",
+            "aboutUkPlaceholder": "Що ця людина робитиме щодня?",
+            "aboutEnPlaceholder": "What will this person do day to day?"
+        },
+        "matching": {
+            "heading": "Matching",
+            "description": "These answers decide who sees this role and what match score they get. Fill them all in — an untagged field lowers the score for everyone.",
+            "professionalAreas": "Professional area",
+            "pickUpTo_one": "Pick up to {{count}}.",
+            "pickUpTo_other": "Pick up to {{count}}.",
+            "sectors": "Sector",
+            "sectorsHint_one": "Pick up to {{count}}. Pre-filled from your company profile — change it if this role is different.",
+            "sectorsHint_other": "Pick up to {{count}}. Pre-filled from your company profile — change it if this role is different.",
+            "spheres": "Sphere",
+            "spheresHint": "Optional. Candidates can filter vacancies by it.",
+            "opportunityTypes": "Opportunity type",
+            "internship": "Internship dates",
+            "internshipHint": "Optional. When the internship runs.",
+            "internshipStart": "Start",
+            "internshipEnd": "End",
+            "internshipSeason": "Season",
+            "internshipSeasonPlaceholder": "e.g. Summer 2027",
+            "format": "Work format",
+            "region": "Region",
+            "regionHint": "Where in Ukraine the person needs to be.",
+            "regionPlaceholder": "Select a region"
+        },
+        "requirements": {
+            "heading": "Requirements",
+            "description": "Shown on the vacancy card. Not part of the match score for now.",
+            "seniorityFrom": "Seniority — from",
+            "seniorityTo": "Seniority — to",
+            "select": "Select",
+            "seniorityHint": "A range means candidates at either level won't be filtered out.",
+            "englishLevel": "English level",
+            "ukrainianLevel": "Ukrainian level"
+        },
+        "languageLevels": {
+            "notRequired": "Not required",
+            "a2": "A2 — Elementary",
+            "b1": "B1 — Intermediate",
+            "b2": "B2 — Upper-Intermediate",
+            "c1": "C1+ — Advanced / Native"
+        },
+        "salary": {
+            "heading": "Salary and dates",
+            "description": "Roles with a salary range get noticeably more applications.",
+            "from": "From",
+            "to": "To",
+            "currency": "Currency",
+            "deadline": "Accepting applications until",
+            "deadlineHint_one": "Up to {{count}} day. You can extend or close the role at any point.",
+            "deadlineHint_other": "Up to {{count}} days. You can extend or close the role at any point."
+        },
+        "attachments": {
+            "heading": "What candidates send you",
+            "description": "Applications land in Candidates. We'll also email you when someone applies.",
+            "profile": "Back2Impact profile and CV",
+            "profileHint": "always included.",
+            "coverLetter": "Cover letter",
+            "coverLetterHint": "ask candidates to explain why they're a fit.",
+            "portfolio": "Portfolio or work samples",
+            "portfolioHint": "useful for design, content and research roles.",
+            "email": "Email for applications",
+            "emailPlaceholder": "hiring@company.com",
+            "emailHint": "Where we email you about applications to this role. Pre-filled with your account email."
+        }
+    },
+    "settings": {
+        "heading": "Settings",
+        "description": "Your account and what we email you about.",
+        "saved": "Settings saved",
+        "notifications": {
+            "heading": "Email notifications",
+            "recipient": "All notifications go to <email>{{email}}</email>.",
+            "whenApplies": {
+                "label": "When someone applies",
+                "hint": "Applications always appear in Candidates, whatever you choose here.",
+                "email_straight_away": "Email me straight away",
+                "one_daily_summary": "One daily summary",
+                "dont_email_me": "Don't email me"
+            },
+            "also": {
+                "label": "Also email me when",
+                "emailWhenVacancyPassesReview": "A vacancy passes review and goes live",
+                "emailWhenVacancyIsAboutToExpire": "A vacancy is about to expire — 3 days before it closes",
+                "emailWeeklySummary": "Weekly summary of views and applications"
+            }
+        },
+        "inbox": {
+            "heading": "Where applications go",
+            "description": "Add a shared inbox if more than one person handles hiring. This is how a second recruiter sees applications until we add multiple logins.",
+            "label": "Additional email",
+            "placeholder": "hiring@company.com"
+        },
+        "account": {
+            "heading": "Account",
+            "loginEmail": "Login email",
+            "password": "Password",
+            "contactName": "Contact name"
+        },
+        "delete": {
+            "title": "Delete company account",
+            "hint": "Permanently removes your company profile, vacancies and applications. This can't be undone"
+        }
+    }
+}

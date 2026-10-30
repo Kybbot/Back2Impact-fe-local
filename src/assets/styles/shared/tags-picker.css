@@ -1,0 +1,24 @@
+.tags-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags-picker__tile {
+    border: 1px solid #EEEEEE;
+    border-radius: 100px;
+    padding: 6.5px 12px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #33333399;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.tags-picker__tile_selected {
+    border-color: #333333;
+    color: #333333;
+}

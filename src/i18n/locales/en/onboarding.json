@@ -1,0 +1,51 @@
+{
+    "step": "Step {{number}}",
+    "editAnswers": "Something's off? Edit my answers",
+    "nav": {
+        "back": "Back",
+        "next": "Next",
+        "finish": "Finish",
+        "goToOpportunities": "Go to my opportunities"
+    },
+    "aboutYou": {
+        "heading": "Let's get to know you",
+        "description": "Which option describes you best"
+    },
+    "lookingFor": {
+        "heading": "What are you looking for?",
+        "description": "Select all that apply — we'll tailor opportunities to your goals"
+    },
+    "sectors": {
+        "heading": "What sectors interest you?",
+        "description": "Select all that apply"
+    },
+    "professions": {
+        "heading": "What areas do you have experience in?",
+        "description": "Choose up to 3 main areas"
+    },
+    "location": {
+        "heading": "Where are you based now?",
+        "description": "Helps us understand where our community lives",
+        "selectCountry": "Select Country"
+    },
+    "workLocation": {
+        "heading": "Where would you like to work?",
+        "description": "We'll match opportunities to your preferred location and format",
+        "regionsPlaceholder": "Which regions? You can add several",
+        "citiesPlaceholder": "Specific towns or villages (optional)"
+    },
+    "cv": {
+        "heading": "Upload your CV",
+        "description": "A CV helps employers find you — but you can add it anytime later in your profile."
+    },
+    "done": {
+        "heading": "You're all set!",
+        "description": "We've personalised your opportunities based on your answers. Here's what we got:",
+        "cvMissing": "Not uploaded — add later in profile",
+        "lookingFor": "Looking for",
+        "sectors": "Sectors",
+        "professions": "Professions",
+        "basedIn": "Based in",
+        "workLocation": "Work location"
+    }
+}

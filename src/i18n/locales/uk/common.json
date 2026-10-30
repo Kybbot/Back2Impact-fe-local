@@ -1,0 +1,49 @@
+{
+    "language": {
+        "label": "Мова інтерфейсу",
+        "short": {
+            "uk": "UA",
+            "en": "EN"
+        }
+    },
+    "nav": {
+        "all": "Усі",
+        "forYou": "Для вас",
+        "saved": "Збережені",
+        "applied": "Відгуки",
+        "login": "Увійти",
+        "profilePhotoAlt": "Фото користувача"
+    },
+    "notFound": {
+        "browseAll": "Переглянути всі вакансії",
+        "goHome": "На головну"
+    },
+    "fileUpload": {
+        "dragDrop": "Перетягніть файл сюди",
+        "or": "або",
+        "select": "Обрати файл",
+        "delete": "Видалити"
+    },
+    "pagination": {
+        "label": "Сторінки",
+        "previous": "Попередня сторінка",
+        "next": "Наступна сторінка",
+        "page": "Сторінка {{page}}"
+    },
+    "datePicker": {
+        "placeholder": "Оберіть дату"
+    },
+    "searchSelect": {
+        "noResults": "Нічого не знайдено"
+    },
+    "richTextEditor": {
+        "toolbar": "Форматування тексту",
+        "heading1": "Заголовок 1",
+        "heading2": "Заголовок 2",
+        "heading3": "Заголовок 3",
+        "bold": "Жирний",
+        "italic": "Курсив",
+        "bulletList": "Маркований список",
+        "orderedList": "Нумерований список"
+    }
+}

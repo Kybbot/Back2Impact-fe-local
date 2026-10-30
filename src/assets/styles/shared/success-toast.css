@@ -1,0 +1,17 @@
+.success-toast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    border: 1px solid #5CDB8480;
+    border-radius: 8px;
+    background-color: #E1F6E7;
+}
+
+.success-toast__message {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+}

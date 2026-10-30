@@ -1,0 +1,1328 @@
+.main {
+    display: grid;
+    gap: 12px;
+
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 0 99px 0;
+}
+
+/* HEADER */
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 24px 16px 24px;
+}
+
+.mainHeader__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mainHeader__logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainHeader__desktopLogo {
+    display: none;
+}
+
+.mainHeader__desktopSelect {
+    display: none;
+}
+
+.mainHeader__ul {
+    display: none;
+}
+
+.mainHeader__right {
+    display: none;
+}
+
+/* USER MENU: the badge is a button here, the rest of its look comes from app-header.css */
+.mainUserMenu__trigger {
+    border: none;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.mainUserMenu__trigger[data-state="open"] {
+    background-color: #ebebeb;
+}
+
+.mainUserMenu {
+    min-width: 180px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 24px 0px #262c4729;
+}
+
+.mainUserMenu__item {
+    display: block;
+    padding: 10px 16px;
+
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #333333;
+
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    transition:
+        color 0.2s ease-in,
+        background-color 0.2s ease-in;
+}
+
+.mainUserMenu__item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.mainUserMenu__item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.mainUserMenu__item[data-highlighted] {
+    color: #4577c9;
+    background-color: #f0f6ff;
+}
+
+.mainUserMenu__item[data-disabled] {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.mainHeader__btn,
+.mainMobileMenu__close {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #fafafa;
+}
+
+/* MOBILE MENU */
+.mainMobileMenu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    padding: 32px 24px 16px 24px;
+    background-color: #f0eee8;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mainMobileMenu:focus {
+    outline: none;
+}
+
+.mainMobileMenu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.mainMobileMenu__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.mainMobileMenu__pin {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #2a69ce;
+
+    padding: 3px 8px 5px;
+    border-radius: 100px;
+    background-color: #5587d826;
+}
+
+.mainMobileMenu__logo {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #3d3f41;
+}
+
+.mainMobileMenu__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 8px;
+}
+
+.mainMobileMenu__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+    text-decoration: none;
+    padding: 12.5px 12px;
+    transition: color ease 0.3s;
+}
+
+.mainMobileMenu__link:hover {
+    color: #333333;
+}
+
+/* HERO */
+.mainHero {
+    display: grid;
+    position: relative;
+}
+
+.mainHero__container {
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 42px 0 60px 0;
+    background-color: #ffffff;
+}
+
+.mainHero__dec {
+    width: 56px;
+    height: 170px;
+    position: absolute;
+    border-radius: 16px;
+}
+
+.mainHero__wrapper {
+    padding: 0 32px;
+    margin-bottom: 53px;
+}
+
+.mainHero__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mainHero__title--span {
+    display: inline-grid;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+    color: #4286f5;
+
+    padding: 0px 12px 2px 12px;
+    border-radius: 12px;
+    background-color: #4286f514;
+}
+
+.mainHero__title--span-uk {
+    padding: 0px 12px 3px 12px;
+}
+
+.mainHero__word {
+    grid-area: 1 / 1;
+
+    opacity: 0;
+    place-self: center;
+    visibility: hidden;
+    transition:
+        opacity 320ms ease,
+        transform 320ms ease,
+        visibility 0s linear 320ms;
+}
+
+.mainHero__word[data-state="idle"] {
+    transform: translateY(0.3em);
+}
+
+.mainHero__word[data-state="leaving"] {
+    transform: translateY(-0.3em);
+}
+
+.mainHero__word[data-state="active"] {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition:
+        opacity 320ms ease,
+        transform 320ms ease,
+        visibility 0s linear 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mainHero__word {
+        transition: none;
+        transform: none;
+    }
+}
+
+.mainHero__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    color: #33333399;
+
+    max-width: 400px;
+    margin-bottom: 24px;
+}
+
+.mainHero__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #ffffff;
+    width: fit-content;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: #4286f5;
+    transition:
+        margin ease 0.3s,
+        padding ease 0.3s;
+}
+
+.mainHero__link:hover {
+    margin: -2px -2px;
+    padding: 18px 26.5px;
+}
+
+.mainHero__link[data-ready="false"] {
+    visibility: hidden;
+}
+
+.mainHero__picture {
+    width: 667px;
+    margin-left: 32px;
+    position: relative;
+}
+
+.mainHero__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mainHero__card2 {
+    position: absolute;
+    bottom: -13px;
+    left: -10px;
+
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+}
+
+/* OPPORTUNITIES */
+.mainOpportunities {
+    border-radius: 24px;
+    background-color: #ffffff;
+    padding: 32px 32px 72px 32px;
+}
+
+.mainOpportunities__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.mainOpportunities__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+    max-width: 566px;
+    margin-bottom: 24px;
+}
+
+.mainOpportunities__cards {
+    display: grid;
+    gap: 16px;
+}
+
+.mainOpportunities__card {
+    border-radius: 16px;
+    padding: 32px 0 45px 0;
+    background-color: #4286f514;
+}
+
+.mainOpportunities__card:nth-child(2) {
+    padding: 32px 0 25px 0;
+}
+
+.mainOpportunities__subTitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.mainOpportunities__subDescription {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    color: #33333399;
+    max-width: 207px;
+    margin: 0 auto 40px auto;
+}
+
+.mainOpportunities__subDescription--second {
+    margin: 0 auto 33px auto;
+}
+
+.mainOpportunities__subDescription--third {
+    margin: 0 auto 47px auto;
+}
+
+.mainOpportunities__img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* GOAL */
+.mainGoal {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.mainGoal__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+
+    margin: 0 auto;
+    max-width: 235px;
+    margin-bottom: 16px;
+}
+
+.mainGoal__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    color: #33333399;
+
+    margin: 0 auto;
+    max-width: 448px;
+    margin-bottom: 24px;
+}
+
+.mainGoal__wrapper {
+    height: 708px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    background-color: #f7f6f380;
+}
+
+.mainGoal__card1 {
+    position: absolute;
+    z-index: 2;
+    top: 13px;
+    left: 16px;
+}
+
+.mainGoal__card2 {
+    position: absolute;
+    z-index: 2;
+    top: 221px;
+    right: 16px;
+}
+
+.mainGoal__card3 {
+    position: absolute;
+    z-index: 2;
+    top: 460px;
+    left: 5px;
+}
+
+.mainGoal__line1 {
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: -290px;
+}
+
+.mainGoal__line2 {
+    position: absolute;
+    z-index: 1;
+    top: 270px;
+    left: -90px;
+}
+
+.mainGoal__line3 {
+    position: absolute;
+    z-index: 1;
+    top: 325px;
+    left: -125px;
+}
+
+/* HIRING */
+.mainHiring {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.mainHiring__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.mainHiring__tag {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #4286f5;
+    margin-bottom: 8px;
+    padding: 2.5px 10px;
+    border-radius: 12px;
+    background-color: #4286f514;
+}
+
+.mainHiring__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.mainHiring__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+    margin-bottom: 16px;
+}
+
+.mainHiring__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f6f6f6;
+    transition:
+        margin ease 0.3s,
+        padding ease 0.3s;
+}
+
+.mainHiring__link:hover {
+    margin: -2px auto;
+    padding: 18px 18.5px;
+}
+
+/* FOOTER */
+.mainFooter {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.mainFooter__wrapper {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.mainFooter__first {
+    display: grid;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.mainFooter__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #3d3f41;
+}
+
+.mainFooter__description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mainFooter__second {
+    display: grid;
+    gap: 24px;
+}
+
+.mainFooter__subTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mainFooter__subTitle--span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+    padding: 4px 10px;
+    border-radius: 100px;
+    background-color: #fff8a7;
+}
+
+.mainFooter__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: grid;
+    gap: 12px;
+}
+
+.mainFooter__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+    text-decoration: none;
+    transition: color ease 0.3s;
+}
+
+a.mainFooter__link:hover {
+    color: #333333;
+}
+
+.mainFooter__rights {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+}
+
+/* ANIMATIONS */
+@keyframes mainFadeUp {
+    from {
+        opacity: 0;
+        translate: 0 24px;
+    }
+}
+
+@keyframes mainFadeDown {
+    from {
+        opacity: 0;
+        translate: 0 -12px;
+    }
+}
+
+@keyframes mainFadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes mainDraw {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+@keyframes mainZoomIn {
+    from {
+        opacity: 0;
+        scale: 0.96;
+    }
+}
+
+/* `translate` rather than `transform`, so the rotated hero plates keep their
+angle, and `animation` rather than `transition`, so hover transitions stay.
+`backwards` fill: nothing is held once an animation ends */
+@media (prefers-reduced-motion: no-preference) {
+    /* on load: plain CSS, so it plays on the prerendered HTML before hydration.
+    The header bar stays put, its contents slide in */
+    .mainHeader__ul,
+    .mainHeader__desktopSelect,
+    .mainHeader__btn {
+        animation: mainFadeDown 600ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    .mainHeader__ul,
+    .mainHeader__btn {
+        animation-delay: 80ms;
+    }
+
+    .mainHeader__desktopSelect {
+        animation-delay: 160ms;
+    }
+
+    .mainHero__title,
+    .mainHero__description,
+    .mainHero__picture,
+    .mainHero__card2 {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    /* short delays — the heading and the app image are the LCP candidates */
+    .mainHero__description {
+        animation-delay: 80ms;
+    }
+
+    .mainHero__picture {
+        animation-delay: 240ms;
+    }
+
+    .mainHero__card2 {
+        animation-delay: 500ms;
+    }
+
+    .mainHero__dec {
+        animation: mainFadeIn 900ms ease 300ms backwards;
+    }
+
+    .mainHero__dec2 {
+        animation-delay: 500ms;
+    }
+
+    .mainHero__dec3 {
+        animation-delay: 600ms;
+    }
+
+    .mainHero__dec4 {
+        animation-delay: 750ms;
+    }
+
+    .mainHero__dec5 {
+        animation-delay: 850ms;
+    }
+
+    /* the user is known only after hydration, so these slide in too, not pop in.
+    No delay: they already show up late */
+    .mainHeader__login,
+    .mainHeader__right .app-header__user-block {
+        animation: mainFadeDown 600ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    /* the hero CTA is mounted from the start to hold its place; the animation
+    starts once `data-ready` flips, not on load */
+    .mainHero__link[data-ready="true"] {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    /* on scroll: MainReveal flips `data-revealed` once the block is in view */
+    .mainReveal[data-revealed="false"],
+    .mainGoal__wrapper[data-revealed="false"] > img,
+    .mainHiring[data-revealed="false"] .mainHiring__img,
+    .mainHiring[data-revealed="false"] .mainHiring__tag,
+    .mainHiring[data-revealed="false"] .mainHiring__title,
+    .mainHiring[data-revealed="false"] .mainHiring__description,
+    .mainHiring[data-revealed="false"] .mainHiring__link,
+    .mainFooter[data-revealed="false"] .mainFooter__first,
+    .mainFooter[data-revealed="false"] .mainFooter__second,
+    .mainFooter[data-revealed="false"] .mainFooter__third {
+        opacity: 0;
+    }
+
+    .mainReveal[data-revealed="true"] {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms) backwards;
+    }
+
+    .mainOpportunities__description,
+    .mainGoal__description {
+        --reveal-delay: 100ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card1,
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card2,
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card3 {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line1,
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line2,
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line3 {
+        animation: mainDraw 900ms ease-in-out backwards;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card1 {
+        animation-delay: 200ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line1 {
+        animation-delay: 300ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card2 {
+        animation-delay: 350ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line2 {
+        animation-delay: 450ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__card3 {
+        animation-delay: 500ms;
+    }
+
+    .mainGoal__wrapper[data-revealed="true"] > .mainGoal__line3 {
+        animation-delay: 600ms;
+    }
+
+    /* the cards themselves stay put, only their contents carry the motion */
+    .mainHiring.mainReveal[data-revealed],
+    .mainFooter.mainReveal[data-revealed] {
+        opacity: 1;
+        animation: none;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__img {
+        animation: mainZoomIn 800ms cubic-bezier(0.22, 1, 0.36, 1) 100ms backwards;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__tag,
+    .mainHiring[data-revealed="true"] .mainHiring__title,
+    .mainHiring[data-revealed="true"] .mainHiring__description,
+    .mainHiring[data-revealed="true"] .mainHiring__link {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__tag {
+        animation-delay: 200ms;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__title {
+        animation-delay: 280ms;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__description {
+        animation-delay: 360ms;
+    }
+
+    .mainHiring[data-revealed="true"] .mainHiring__link {
+        animation-delay: 440ms;
+    }
+
+    .mainFooter[data-revealed="true"] .mainFooter__first,
+    .mainFooter[data-revealed="true"] .mainFooter__second,
+    .mainFooter[data-revealed="true"] .mainFooter__third {
+        animation: mainFadeUp 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+    }
+
+    .mainFooter[data-revealed="true"] .mainFooter__first {
+        animation-delay: 100ms;
+    }
+
+    .mainFooter[data-revealed="true"] .mainFooter__second {
+        animation-delay: 200ms;
+    }
+
+    .mainFooter[data-revealed="true"] .mainFooter__third {
+        animation-delay: 300ms;
+    }
+}
+
+/* without JS nothing would ever reveal them. The extra `.main` outweighs the
+rule above, since postcss-sort-media-queries may reorder the two blocks */
+@media (scripting: none) {
+    .main .mainReveal[data-revealed="false"],
+    .main .mainGoal__wrapper[data-revealed="false"] > img,
+    .main .mainHiring[data-revealed="false"] .mainHiring__img,
+    .main .mainHiring[data-revealed="false"] .mainHiring__tag,
+    .main .mainHiring[data-revealed="false"] .mainHiring__title,
+    .main .mainHiring[data-revealed="false"] .mainHiring__description,
+    .main .mainHiring[data-revealed="false"] .mainHiring__link,
+    .main .mainFooter[data-revealed="false"] .mainFooter__first,
+    .main .mainFooter[data-revealed="false"] .mainFooter__second,
+    .main .mainFooter[data-revealed="false"] .mainFooter__third {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 744px) {
+    .main {
+        gap: 24px;
+        max-width: 1084px;
+        padding: 42px 42px 104px 42px;
+    }
+
+    /* HEADER */
+    .mainHeader {
+        padding: 23px 24px;
+        border-radius: 16px;
+    }
+
+    /* MOBILE MENU */
+    .mainMobileMenu {
+        top: 42px;
+        left: 42px;
+        right: 42px;
+        width: initial;
+        transform: initial;
+        padding: 23px 24px;
+        border-radius: 24px;
+    }
+
+    .mainMobileMenu__top {
+        margin-bottom: 24px;
+    }
+
+    /* HERO */
+    .mainHero__container {
+        padding: 56px 0 66px 0;
+    }
+
+    .mainHero__dec1 {
+        top: -10px;
+        right: -70px;
+        transform: rotate(95.3deg);
+        background-color: #4286f5;
+    }
+
+    .mainHero__dec2 {
+        bottom: 100px;
+        right: -20px;
+        z-index: 1;
+        transform: rotate(-46.35deg);
+        background-color: #ffd76f;
+    }
+
+    .mainHero__dec3 {
+        top: 15%;
+        left: -100px;
+        background-color: #dce9ff;
+        transform: translateY(-50%) rotate(157.51deg);
+    }
+
+    .mainHero__dec5 {
+        top: 36%;
+        left: -40px;
+        background-color: #ffd76f;
+        transform: translateY(-50%) rotate(-133.65deg);
+    }
+
+    .mainHero__wrapper {
+        padding: 0 56px;
+        margin-bottom: 45px;
+    }
+
+    .mainHero__title {
+        gap: 12px;
+        font-size: 40px;
+        flex-direction: row;
+    }
+
+    .mainHero__picture {
+        width: 895px;
+        margin-left: 65px;
+    }
+
+    .mainHero__card2 {
+        bottom: -20px;
+        left: -15px;
+
+        width: 200px;
+        height: 200px;
+    }
+
+    /* OPPORTUNITIES */
+    .mainOpportunities {
+        padding: 32px;
+    }
+
+    /* GOAL */
+    .mainGoal__title {
+        max-width: initial;
+    }
+
+    .mainGoal__wrapper {
+        height: 468px;
+    }
+
+    .mainGoal__card2 {
+        top: 221px;
+        right: 200px;
+    }
+
+    .mainGoal__card3 {
+        top: 13px;
+        right: 25px;
+        left: initial;
+    }
+
+    .mainGoal__line1 {
+        top: 100px;
+    }
+
+    .mainGoal__line2 {
+        top: 200px;
+    }
+
+    .mainGoal__line3 {
+        top: 185px;
+    }
+
+    /* HIRING */
+    .mainHiring__img {
+        max-height: 273px;
+    }
+
+    .mainHiring__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .mainHiring__title {
+        margin-bottom: 0;
+    }
+
+    /* FOOTER */
+    .mainFooter__wrapper {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
+
+    .mainFooter__second {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    /* GOAL */
+    .mainGoal__card1 {
+        left: 80px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    /* GOAL */
+    .mainGoal__card1 {
+        left: 80px;
+    }
+
+    .mainGoal__card2 {
+        right: 300px;
+    }
+
+    .mainGoal__card3 {
+        right: 55px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    /* GOAL */
+    .mainGoal__line1 {
+        top: 100px;
+        left: -200px;
+    }
+
+    .mainGoal__line2 {
+        top: 175px;
+        left: 70px;
+    }
+
+    .mainGoal__line3 {
+        left: 0;
+        top: 125px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        padding: 42px 42px 122px 42px;
+    }
+
+    /* HEADER */
+    .mainHeader {
+        height: 80px;
+        padding: 16px 24px;
+        background-color: #ffffff;
+    }
+
+    .mainHeader__mobileLogo {
+        display: none;
+    }
+
+    .mainHeader__desktopLogo {
+        display: block;
+    }
+
+    .mainHeader__desktopSelect {
+        display: block;
+    }
+
+    .mainHeader__lng {
+        display: none;
+    }
+
+    .mainHeader__ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .mainHeader__link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 120%;
+        color: #33333399;
+        text-decoration: none;
+        transition: color ease 0.3s;
+    }
+
+    .mainHeader__link:hover {
+        color: #333333;
+    }
+
+    .mainHeader__right {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .mainHeader__login {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 120%;
+        color: #333333;
+        text-decoration: none;
+
+        padding: 16px;
+        border-radius: 12px;
+        background-color: #f6f6f6;
+        transition:
+            margin ease 0.3s,
+            padding ease 0.3s;
+    }
+
+    .mainHeader__login:hover {
+        margin: -2px auto;
+        padding: 18px 18.5px;
+    }
+
+    .mainHeader__btn {
+        display: none;
+    }
+
+    /* HERO */
+    .mainHero__container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 66px 0 55px 48px;
+    }
+
+    .mainHero__dec1 {
+        top: 50px;
+        right: -120px;
+    }
+
+    .mainHero__dec2 {
+        bottom: -52%;
+        right: -120px;
+    }
+
+    .mainHero__dec3 {
+        top: 36%;
+        left: -70px;
+    }
+
+    .mainHero__dec4 {
+        top: 93%;
+        left: -130px;
+        background-color: #ffffff;
+        transform: translateY(-50%) rotate(160.82deg);
+    }
+
+    .mainHero__dec5 {
+        top: 68%;
+        left: -270px;
+    }
+
+    .mainHero__wrapper {
+        margin: 0;
+        padding: 0;
+        flex: 1 0 auto;
+    }
+
+    .mainHero__title {
+        flex-direction: row;
+    }
+
+    .mainHero__description {
+        margin-bottom: 32px;
+    }
+
+    .mainHero__picture {
+        width: 716px;
+        height: 445px;
+        margin: initial;
+        margin-left: 80px;
+    }
+
+    .mainHero__img {
+        width: inherit;
+        height: inherit;
+    }
+
+    .mainHero__card2 {
+        bottom: -25px;
+        left: -15px;
+
+        width: 160px;
+        height: 160px;
+    }
+
+    /* OPPORTUNITIES */
+    .mainOpportunities {
+        padding: 48px;
+    }
+
+    .mainOpportunities__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* the cards share a row from here on, so they reveal one after another */
+    .mainOpportunities__card:nth-child(2) {
+        --reveal-delay: 120ms;
+    }
+
+    .mainOpportunities__card:nth-child(3) {
+        --reveal-delay: 240ms;
+    }
+
+    .mainOpportunities__card:nth-child(3) > .mainOpportunities__img {
+        margin: 0px auto 0 45px;
+    }
+
+    /* GOAL */
+    .mainGoal {
+        padding: 42px;
+    }
+
+    .mainGoal__card1 {
+        top: 50px;
+        left: 50px;
+    }
+
+    .mainGoal__card2 {
+        top: 200px;
+        right: 355px;
+    }
+
+    .mainGoal__card3 {
+        top: 60px;
+        right: 30px;
+    }
+
+    .mainGoal__line1 {
+        top: 100px;
+        left: -130px;
+    }
+
+    .mainGoal__line2 {
+        top: 211px;
+        left: 55px;
+    }
+
+    .mainGoal__line3 {
+        left: 210px;
+    }
+
+    /* HIRING */
+    .mainHiring {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 60px;
+        padding: 48px;
+    }
+
+    .mainHiring__img {
+        margin: 0;
+        max-width: 397px;
+        max-height: 287px;
+    }
+
+    .mainHiring__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .mainHiring__tag {
+        font-size: 40px;
+    }
+
+    .mainHiring__link {
+        display: inline-block;
+    }
+
+    /* FOOTER */
+    .mainFooter {
+        padding: 48px;
+    }
+
+    .mainFooter__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 120px;
+    }
+
+    .mainFooter__first {
+        margin-bottom: 0;
+    }
+
+    .mainFooter__second {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 1085px) {
+    /* OPPORTUNITIES */
+    .mainOpportunities__card:nth-child(3) > .mainOpportunities__img {
+        margin: 0px auto 0 55px;
+    }
+}

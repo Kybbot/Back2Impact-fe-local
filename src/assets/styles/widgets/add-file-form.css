@@ -1,0 +1,137 @@
+.add-file-form-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100vw;
+    max-width: 515px;
+    max-height: 85vh;
+    border-radius: 24px;
+    background-color: #ffffff;
+    animation: dialogContentShow 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.add-file-form-content[data-state="closed"] {
+    animation: dialogContentHide 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.add-file-form-content:focus {
+    outline: none;
+}
+
+.add-file-form {
+    border-radius: 24px;
+    background-color: #ffffff;
+}
+
+.add-file-form__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 72px;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 32px 17px;
+}
+
+.add-file-form__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #333333;
+}
+
+.add-file-form__close-btn {
+    display: block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.add-file-form__main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px 32px;
+}
+
+.add-file-form__file-upload {
+    width: 100%;
+}
+
+.add-file-form__error-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ffe8e5;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #ffd8d466;
+}
+
+.add-file-form__error-message {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.2%;
+}
+
+.add-file-form__btn {
+    flex: 1;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+}
+
+.add-file-form__btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-top: 1px solid #f5f5f5;
+    padding: 16px 24px 32px 24px;
+}
+
+.add-file-form__btn_cancel {
+    color: #333333;
+    background-color: #fafafa;
+}
+
+.add-file-form__btn_save {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.add-file-form__btn_save:disabled {
+    color: #adadad;
+    background-color: #3333331a;
+}
+
+@keyframes dialogContentShow {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes dialogContentHide {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+}

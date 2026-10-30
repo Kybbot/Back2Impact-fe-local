@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    min-height: 100%;
+    font-family: "Fixel";
+}
+
+body {
+    font-family: "Fixel";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #333333;
+
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    background-color: #f7f6f3;
+}
+
+.app {
+    overflow: hidden;
+}
+
+/* headings a crawler and a screen reader need but the design has no room for */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}

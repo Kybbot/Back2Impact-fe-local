@@ -1,0 +1,73 @@
+.customRadioGroup__wrapper {
+    display: grid;
+    gap: 8px;
+}
+
+.customRadioGroup__label {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #33333399;
+
+    display: flex;
+    gap: 2px;
+}
+
+.customRadioGroup__asterisk {
+    color: #ea3d2c;
+}
+
+.customRadioGroup__root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.customRadioGroup__item {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+
+    outline: none;
+    cursor: pointer;
+    border-radius: 32px;
+    padding: 10px 16px 9px 16px;
+    background-color: #ffffff;
+    border: 1px solid #f1efe9b2;
+    transition: all 0.2s ease-in;
+}
+
+.customRadioGroup__item:hover {
+    border: 1px solid #33333333;
+}
+
+.customRadioGroup__item:focus-visible {
+    border: 1px solid #333333;
+}
+
+.customRadioGroup__item[data-state="checked"] {
+    border: 1px solid #333333;
+}
+
+.customRadioGroup__item[data-disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.customRadioGroup__root--error .customRadioGroup__item {
+    border: 1px solid #ea3d2c;
+}
+
+.customRadioGroup__error {
+    font-family: "Fixel";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.2%;
+    color: #ea3d2c;
+}

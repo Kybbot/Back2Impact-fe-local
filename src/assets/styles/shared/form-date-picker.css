@@ -1,0 +1,127 @@
+@import "@daypicker/react/style.css";
+
+.datePicker__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+.datePicker__trigger[data-placeholder] {
+    color: #33333399;
+}
+
+.datePicker__trigger[data-state="open"] {
+    border: 1px solid #333333;
+}
+
+.datePicker__trigger:focus-visible.customInput__field--error,
+.datePicker__trigger[data-state="open"].customInput__field--error {
+    border: 1px solid #ea3d2c;
+}
+
+.datePicker__trigger:disabled {
+    cursor: not-allowed;
+}
+
+.datePicker__trigger:disabled .datePicker__icon {
+    opacity: 0.5;
+}
+
+.datePicker__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    /* drawn over the padding, so the trigger is as tall as a text input next to it */
+    margin-block: -4px;
+}
+
+.datePicker__content {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 24px 0px #262c4729;
+}
+
+.datePicker__content .rdp-root {
+    --rdp-accent-color: #4577c9;
+    --rdp-accent-background-color: #f0f6ff;
+
+    --rdp-day-height: 40px;
+    --rdp-day-width: 40px;
+    --rdp-day_button-height: 38px;
+    --rdp-day_button-width: 38px;
+    --rdp-day_button-border-radius: 8px;
+    --rdp-day_button-border: 1px solid transparent;
+    --rdp-selected-border: 1px solid var(--rdp-accent-color);
+
+    --rdp-nav-height: 40px;
+    --rdp-nav_button-height: 32px;
+    --rdp-nav_button-width: 32px;
+    --rdp-disabled-opacity: 0.3;
+
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+}
+
+.datePicker__content .rdp-month_caption {
+    font-size: 16px;
+    font-weight: 500;
+    padding-inline-start: 8px;
+}
+
+/* Ukrainian month names come in lower case */
+.datePicker__content .rdp-caption_label {
+    text-transform: capitalize;
+}
+
+.datePicker__content .rdp-weekday {
+    opacity: 1;
+    font-size: 12px;
+    color: #33333399;
+}
+
+.datePicker__content .rdp-button_previous,
+.datePicker__content .rdp-button_next {
+    border-radius: 8px;
+}
+
+.datePicker__content .rdp-button_previous:not([aria-disabled="true"]):hover,
+.datePicker__content .rdp-button_next:not([aria-disabled="true"]):hover {
+    background-color: var(--rdp-accent-background-color);
+}
+
+.datePicker__content .rdp-day_button {
+    transition: background-color 0.2s ease-in;
+}
+
+.datePicker__content .rdp-day:not(.rdp-disabled, .rdp-selected) .rdp-day_button:hover {
+    color: var(--rdp-accent-color);
+    background-color: var(--rdp-accent-background-color);
+}
+
+.datePicker__content .rdp-day_button:focus-visible {
+    outline: none;
+    border: 1px solid #333333;
+}
+
+.datePicker__content .rdp-today:not(.rdp-outside) {
+    font-weight: 700;
+}
+
+.datePicker__content .rdp-selected {
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.datePicker__content .rdp-selected .rdp-day_button {
+    color: #ffffff;
+    background-color: var(--rdp-accent-color);
+}

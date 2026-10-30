@@ -1,0 +1,215 @@
+{
+    "nav": {
+        "aboutMe": "About me",
+        "experience": "Experience",
+        "documents": "Documents",
+        "settings": "Settings",
+        "logout": "Log out"
+    },
+    "headerNav": {
+        "opportunities": "Opportunities",
+        "stories": "Stories",
+        "projects": "Projects"
+    },
+    "profilePhotoAlt": "Profile photo",
+    "updatePhoto": "Update",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "noData": "No Data Available",
+    "changesSaved": "Changes saved",
+    "completeness": {
+        "title": "Profile<br/>completness",
+        "basicInformation": "Basic information",
+        "workExperience": "Work experience",
+        "cv": "CV",
+        "coverLetter": "Cover letter"
+    },
+    "basicInfo": {
+        "heading": "Basic information",
+        "editHeading": "Edit basic information",
+        "description": "These answers personalise your opportunities. Changing them updates your match scores",
+        "lookingFor": "Looking for",
+        "sectors": "Sectors",
+        "professions": "Professions",
+        "basedIn": "Based in",
+        "workLocation": "Work location",
+        "selectCountry": "Select Country",
+        "regionsPlaceholder": "Which regions? You can add several",
+        "citiesPlaceholder": "Specific towns or villages (optional)"
+    },
+    "discard": {
+        "heading": "Are you sure you want to exit<br/>without saving?",
+        "description": "You will loose changes you've made to this file",
+        "confirm": "Exit without saving"
+    },
+    "documents": {
+        "heading": "Documents",
+        "description": "All your files in one place. These can be attached when you apply to vacancies.",
+        "uploaded": "Uploaded {{date}}",
+        "download": "Download",
+        "deleteFile": "Delete file",
+        "confirmDelete": "Do you really want to delete the \"{{name}}\" file?",
+        "confirmDeleteCv": "This CV may have been used to submit applications. Without a CV you won't be able to apply.",
+        "sections": {
+            "cv": "CV",
+            "portfolio": "Portfolio",
+            "coverLetter": "Cover letter",
+            "other": "Other"
+        },
+        "coverLetterPlaceholder": "Dear Hiring Team..",
+        "coverLetterDescription": "An opportunity to introduce yourself beyond your resume. It helps explain your motivation, highlight relevant experience, and show why you're a good fit for the role.",
+        "portfolioDescription": "Your cases and work",
+        "addFileTitle": {
+            "cv": "Add CV",
+            "portfolio": "Add portfolio",
+            "cover_letter": "Add cover letter",
+            "other": "Add file"
+        }
+    },
+    "experience": {
+        "title": "Your experience",
+        "description": "Keep your profile up to date — this helps us match you with the right opportunities",
+        "today": "Today",
+        "deleteTitle": "Delete Entry?",
+        "work": {
+            "title": "Work Experience",
+            "addTitle": "Add Work Experience",
+            "editTitle": "Edit Work Experience",
+            "company": "Company",
+            "jobTitle": "Job title",
+            "startDate": "Start date",
+            "endDate": "End date",
+            "currentlyHere": "I’m currently working here",
+            "description": "What did you do in this role?",
+            "descriptionPlaceholder": "Briefly describe your responsibilities and key achievements",
+            "startMonthPlaceholder": "December",
+            "endMonthPlaceholder": "October",
+            "dialogDescription": "For each role, briefly describe what you did — a sentence or bullet points works great. e.g. \"Led a team of 5, managed donor communications, coordinated 3 international events\"",
+            "companyPlaceholder": "e.g. Microsoft",
+            "jobTitlePlaceholder": "e.g. Project manager"
+        },
+        "education": {
+            "title": "Education",
+            "addTitle": "Add Education",
+            "editTitle": "Edit Education",
+            "institution": "University or Institution",
+            "degree": "Degree level",
+            "field": "Field of study or Speciality",
+            "years": "Years attended",
+            "from": "From",
+            "thesis": "Thesis or diploma project (optional)",
+            "description": "Description",
+            "institutionPlaceholder": "e.g. Kyiv Polytechnic Institute",
+            "fieldPlaceholder": "e.g. Project manager",
+            "to": "To"
+        },
+        "languages": {
+            "title": "Languages",
+            "addTitle": "Add Language",
+            "editTitle": "Edit Language",
+            "language": "Language",
+            "level": "Level",
+            "levelPlaceholder": "B2 (Upper-intermediate)",
+            "description": "Add the languages you speak and your level for each",
+            "languagePlaceholder": "e.g. English"
+        },
+        "projects": {
+            "title": "Additional projects & volunteering",
+            "addTitle": "Add Additional projects & volunteering",
+            "editTitle": "Edit Additional projects & volunteering",
+            "name": "Project name",
+            "namePlaceholder": "e.g. Open Source Climate Dashboard",
+            "link": "Project link",
+            "linkPlaceholder": "e.g. https://example.com",
+            "linkPattern": "Enter a link starting with http:// or https://",
+            "description": "Project description",
+            "descriptionPlaceholder": "Briefly describe the project and your role",
+            "linkLabel": "Link"
+        },
+        "deleteDescription": "Once deleted, this entry can't be restored",
+        "toast": {
+            "education": {
+                "added": "Education was successfully added",
+                "updated": "Education was successfully updated",
+                "deleted": "Education was successfully deleted"
+            },
+            "work": {
+                "added": "Work experience was successfully added",
+                "updated": "Work experience was successfully updated",
+                "deleted": "Work experience was successfully deleted"
+            },
+            "languages": {
+                "added": "Language was successfully added",
+                "updated": "Language was successfully updated",
+                "deleted": "Language was successfully deleted"
+            },
+            "projects": {
+                "added": "Project was successfully added",
+                "updated": "Project was successfully updated",
+                "deleted": "Project was successfully deleted"
+            }
+        }
+    },
+    "settings": {
+        "title": "Settings",
+        "account": {
+            "title": "Account",
+            "password": "Password",
+            "passwordHint": "Last changed 2 months ago",
+            "language": "Interface language",
+            "languageHint": "Applies to the whole platform"
+        },
+        "notifications": {
+            "title": "Notifications",
+            "opportunities": "New matching opportunities",
+            "opportunitiesHint": "A weekly email with new opportunities that match your answers",
+            "updates": "Application updates",
+            "updatesHint": "Emails about the status of your applications"
+        },
+        "privacy": {
+            "title": "Privacy",
+            "visible": "Profile visible to employers",
+            "visibleHint": "Let verified employers find your profile and reach out to you"
+        },
+        "logout": {
+            "title": "Log out",
+            "action": "Log out"
+        },
+        "delete": {
+            "title": "Delete account",
+            "hint": "Permanently removes your profile, documents and applications. This can't be undone"
+        },
+        "saved": "Settings were successfully updated"
+    },
+    "common": {
+        "add": "Add",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit"
+    },
+    "password": {
+        "change": "Change",
+        "changeTitle": "Change Password",
+        "old": "Old Password",
+        "updated": "Password was successfully updated"
+    },
+    "deleteAccount": {
+        "trigger": "Delete account",
+        "title": "Delete Account?",
+        "confirm": "Delete Account",
+        "warning": "Once deleted, your account can't be restored",
+        "description": "Before you delete your account, please tell us why. Every bit of feedback helps!",
+        "reasons": {
+            "unused": "I don't use the platform",
+            "matches": "The matches didn't suit me",
+            "noValue": "I don't see value for myself",
+            "difficult": "Difficult to use",
+            "other": "Other"
+        },
+        "irreversible": "This action can’t be undone"
+    },
+    "photoUpdated": "Profile picture was updated successfully"
+}

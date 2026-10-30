@@ -1,0 +1,180 @@
+.confetti {
+    --confetti-fall-distance: 720px;
+    /* stretches every fall time and start offset together */
+    --confetti-time-scale: 1.6;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* the column a piece falls in comes from flex: space-between spreads
+   however many pieces there are, so the count needs no CSS */
+.confetti__field {
+    position: absolute;
+    inset: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.confetti__piece {
+    position: relative;
+    top: -18px;
+    flex: 0 0 auto;
+    border-radius: 2px;
+    animation: confetti-fall calc(1.8s * var(--confetti-time-scale)) linear infinite;
+}
+
+/* CSS has no random(), but nth-child cycles with coprime lengths
+   (8, 5, 7, 11, 3) behave like one: two pieces match only every 9240.
+   Values inside each cycle are shuffled on purpose, in order they read
+   as a gradient instead of a scatter */
+
+/* color, every 8 */
+.confetti__piece:nth-child(8n + 1) {
+    background: #ff7b6b;
+}
+.confetti__piece:nth-child(8n + 2) {
+    background: #4286f5;
+}
+.confetti__piece:nth-child(8n + 3) {
+    background: #ffd76f;
+}
+.confetti__piece:nth-child(8n + 4) {
+    background: #b8ff57;
+}
+.confetti__piece:nth-child(8n + 5) {
+    background: #f472b6;
+}
+.confetti__piece:nth-child(8n + 6) {
+    background: #57d9a3;
+}
+.confetti__piece:nth-child(8n + 7) {
+    background: #c084fc;
+}
+.confetti__piece:nth-child(8n) {
+    background: #ff9040;
+}
+
+/* shape, every 5 */
+.confetti__piece:nth-child(5n + 1) {
+    width: 8px;
+    height: 12px;
+}
+.confetti__piece:nth-child(5n + 2) {
+    width: 12px;
+    height: 8px;
+    border-radius: 50%;
+}
+.confetti__piece:nth-child(5n + 3) {
+    width: 6px;
+    height: 14px;
+}
+.confetti__piece:nth-child(5n + 4) {
+    width: 14px;
+    height: 6px;
+}
+.confetti__piece:nth-child(5n) {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+/* fall time, every 7 */
+.confetti__piece:nth-child(7n + 1) {
+    animation-duration: calc(1.86s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n + 2) {
+    animation-duration: calc(1.5s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n + 3) {
+    animation-duration: calc(2.1s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n + 4) {
+    animation-duration: calc(1.62s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n + 5) {
+    animation-duration: calc(2.22s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n + 6) {
+    animation-duration: calc(1.74s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(7n) {
+    animation-duration: calc(1.98s * var(--confetti-time-scale));
+}
+
+/* start offset, every 11. Negative, so a piece starts part way through
+   its fall instead of waiting and the first frame is already full */
+.confetti__piece:nth-child(11n + 1) {
+    animation-delay: calc(-0.9s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 2) {
+    animation-delay: calc(-1.7s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 3) {
+    animation-delay: calc(-0.3s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 4) {
+    animation-delay: calc(-2.05s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 5) {
+    animation-delay: calc(-1.2s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 6) {
+    animation-delay: calc(-0.55s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 7) {
+    animation-delay: calc(-1.95s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 8) {
+    animation-delay: calc(-0.75s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 9) {
+    animation-delay: calc(-1.45s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n + 10) {
+    animation-delay: calc(-0.15s * var(--confetti-time-scale));
+}
+.confetti__piece:nth-child(11n) {
+    animation-delay: calc(-2.3s * var(--confetti-time-scale));
+}
+
+/* a nudge off the even spacing, every 3 */
+.confetti__piece:nth-child(3n + 2) {
+    margin-left: 1.4%;
+}
+.confetti__piece:nth-child(3n) {
+    margin-right: 1.8%;
+}
+
+/* linear timing with evenly spaced distances keeps the fall at a constant
+   speed; the keyframes in between are only there for the spin and flip */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg) scaleX(1);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(calc(var(--confetti-fall-distance) * 0.25)) rotate(90deg) scaleX(0);
+    }
+    50% {
+        transform: translateY(calc(var(--confetti-fall-distance) * 0.5)) rotate(180deg) scaleX(-1);
+    }
+    75% {
+        transform: translateY(calc(var(--confetti-fall-distance) * 0.75)) rotate(270deg) scaleX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(var(--confetti-fall-distance)) rotate(360deg) scaleX(1);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .confetti {
+        display: none;
+    }
+}

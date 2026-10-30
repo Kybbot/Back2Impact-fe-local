@@ -1,0 +1,37 @@
+name: Deploy on Railway
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  deploy-railway-main:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: ugs-production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Railway CLI
+        run: npm i -g @railway/cli
+
+      - name: Deploy
+        run: railway up --service b2i-fe --ci
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+  deploy-railway-dev:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Railway CLI
+        run: npm i -g @railway/cli
+
+      - name: Deploy
+        run: railway up --service Back2Impact-fe --ci
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_DEPLOY_TOKEN }}

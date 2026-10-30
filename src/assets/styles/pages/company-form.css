@@ -1,0 +1,183 @@
+.company-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.company-form__hint {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #33333399;
+}
+
+/* the design sets the field labels in the text colour; the per-language
+   textarea labels stay muted, they read as sub-labels of the group */
+.company-form__label,
+.company-form .customInput__label,
+.company-form .customSelect__label {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #333333;
+}
+
+.company-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.company-form__group-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.company-form__description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.company-form__counter {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #33333399;
+}
+
+.company-form__counter_error {
+    color: #ea3d2c;
+}
+
+.company-form__row {
+    display: grid;
+    align-items: start;
+    gap: 24px;
+}
+
+.company-form__tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.company-form__tile {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #333333;
+
+    cursor: pointer;
+    padding: 9px 15px 8px;
+    border-radius: 32px;
+    border: 1px solid #3333331f;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease-in;
+}
+
+.company-form__tile:hover {
+    border-color: #33333366;
+}
+
+.company-form__tile_selected,
+.company-form__tile_selected:hover {
+    border-color: #333333;
+    box-shadow: inset 0 0 0 0.5px #333333;
+}
+
+.company-logo-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.company-logo-field__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.company-logo-field__preview {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background-color: #3333330d;
+}
+
+.company-logo-field__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.company-logo-field__initials {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #33333399;
+}
+
+.company-logo-field__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.company-logo-field__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #4577c9;
+
+    cursor: pointer;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f0f6ff;
+    transition: background-color 0.2s ease-in;
+}
+
+.company-logo-field__btn:hover {
+    background-color: #e1ecff;
+}
+
+.company-logo-field__btn:disabled {
+    cursor: progress;
+    opacity: 0.7;
+}
+
+.company-logo-field__hint {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #33333399;
+}
+
+.company-logo-field__error {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    color: #ea3d2c;
+}
+
+@media screen and (min-width: 744px) {
+    .company-form__row {
+        grid-template-columns: 1fr 1fr;
+    }
+}

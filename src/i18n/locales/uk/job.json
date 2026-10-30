@@ -1,0 +1,48 @@
+{
+    "breadcrumbs": {
+        "label": "Навігаційний ланцюжок",
+        "allVacancies": "Усі вакансії"
+    },
+    "backToListings": "Назад до вакансій",
+    "match": "збіг",
+    "saved": "Збережено",
+    "unsaved": "Видалено зі збережених",
+    "undo": "Скасувати",
+    "apply": "Податися",
+    "applied": "Подано",
+    "appliedWithStatus": "Подано ({{status}})",
+    "applicationSent": "Заявку надіслано!",
+    "applyStatus": {
+        "new": "нова",
+        "in_review": "на розгляді",
+        "invited": "запрошено",
+        "hired": "найнято",
+        "not_a_fit": "відмова"
+    },
+    "seniorityRange": "{{from}} – {{to}}",
+    "salary": "{{min}}",
+    "salary_range": "{{min}} – {{max}}",
+    "salary_max": "до {{max}}",
+    "currency": {
+        "usdPerMonth": "USD/міс",
+        "eurPerMonth": "EUR/міс",
+        "uahPerMonth": "Грн/міс",
+        "usdPerProject": "USD за проєкт",
+        "unpaid": "Без оплати"
+    },
+    "languages": {
+        "english": "Англійська: {{level}}",
+        "ukrainian": "Українська: {{level}}"
+    },
+    "internship": "Стажування",
+    "internshipDates": "{{start}} – {{end}}",
+    "internshipDates_from": "з {{start}}",
+    "internshipDates_until": "до {{end}}",
+    "companyLogoAlt": "Логотип {{company}}",
+    "openCompanyWebsite": "Відкрити сайт компанії",
+    "employees_one": "{{size}} співробітник",
+    "employees_few": "{{size}} співробітники",
+    "employees_many": "{{size}} співробітників",
+    "employees_other": "{{size}} співробітників",
+    "published": "Опубліковано: {{date}}"
+}

@@ -1,0 +1,1 @@
+export type FileType = "cv" | "portfolio" | "cover_letter" | "other";

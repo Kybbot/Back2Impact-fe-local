@@ -1,0 +1,136 @@
+.employer-setup {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 16px 40px;
+}
+
+.employer-setup__top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.employer-setup__logo {
+    display: flex;
+}
+
+.employer-setup__logo--desktop {
+    display: none;
+}
+
+.employer-setup__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.employer-setup__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.employer-setup__emoji-container {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 28px;
+    background-color: #f7f6f3;
+}
+
+.employer-setup__heading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.employer-setup__heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #333333;
+}
+
+.employer-setup__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #33333399;
+}
+
+.employer-setup__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.employer-setup__btn {
+    font-family: "Fixel";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #333333;
+
+    cursor: pointer;
+    padding: 15.5px 32px;
+    border-radius: 8px;
+    border: 1px solid #3333331f;
+    background-color: #ffffff;
+}
+
+.employer-setup__btn_primary {
+    color: #ffffff;
+    border-color: transparent;
+    background-color: #333333;
+}
+
+.employer-setup__btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 744px) {
+    .employer-setup {
+        padding: 40px 24px 64px;
+    }
+
+    .employer-setup__card {
+        padding: 40px;
+    }
+
+    .employer-setup__heading {
+        font-size: 24px;
+    }
+
+    .employer-setup__btns {
+        margin-top: 16px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .employer-setup__logo--mobile {
+        display: none;
+    }
+
+    .employer-setup__logo--desktop {
+        display: flex;
+    }
+}
